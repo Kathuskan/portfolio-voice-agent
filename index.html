@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" class="dark scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kathuskan Thavarajah — Data Science & AI/ML Portfolio</title>
-  <meta name="description" content="Portfolio of Kathuskan Thavarajah — Data Science Undergraduate & Full-Stack Developer building ML applications, NLP pipelines, BI dashboards, and scalable web apps." />
+  <meta name="description"
+    content="Portfolio of Kathuskan Thavarajah — Data Science Undergraduate & Full-Stack Developer building ML applications, NLP pipelines, BI dashboards, and scalable web apps." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Alex+Brush&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Alex+Brush&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
@@ -37,6 +41,7 @@
       --card: rgba(255, 255, 255, 0.85);
       --border: rgba(15, 23, 42, 0.1);
     }
+
     .dark {
       --bg: #05070d;
       --fg: #f8fafc;
@@ -44,29 +49,34 @@
       --card: rgba(13, 18, 30, 0.78);
       --border: rgba(255, 255, 255, 0.08);
     }
+
     body {
       background-color: var(--bg);
       color: var(--fg);
       font-family: 'Space Grotesk', sans-serif;
     }
+
     .grid-bg {
       background-size: 48px 48px;
-      background-image: 
+      background-image:
         linear-gradient(to right, rgba(148, 163, 184, 0.04) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
     }
+
     .glass {
       background: var(--card);
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
       border: 1px solid var(--border);
     }
+
     .glass-strong {
       background: rgba(12, 17, 29, 0.86);
       backdrop-filter: blur(24px);
       -webkit-backdrop-filter: blur(24px);
       border: 1px solid rgba(255, 255, 255, 0.085);
     }
+
     html:not(.dark) .glass-strong {
       background: rgba(255, 255, 255, 0.9);
       border: 1px solid rgba(15, 23, 42, 0.1);
@@ -76,6 +86,7 @@
     .gradient-electric {
       background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 55%, #06b6d4 100%);
     }
+
     .gradient-text {
       background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 45%, #22d3ee 75%, #2563eb 100%);
       background-size: 200% auto;
@@ -87,16 +98,14 @@
 
     /* RUNNING BLUE IN WHITE COLOR NAME TEXT */
     .running-blue-white {
-      background: linear-gradient(
-        110deg,
-        #ffffff 0%,
-        #ffffff 32%,
-        #38bdf8 44%,
-        #2563eb 50%,
-        #06b6d4 56%,
-        #ffffff 68%,
-        #ffffff 100%
-      );
+      background: linear-gradient(110deg,
+          #ffffff 0%,
+          #ffffff 32%,
+          #38bdf8 44%,
+          #2563eb 50%,
+          #06b6d4 56%,
+          #ffffff 68%,
+          #ffffff 100%);
       background-size: 240% 100%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -104,66 +113,107 @@
       animation: runningBlueStream 2.8s linear infinite;
       filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.28));
     }
+
     html:not(.dark) .running-blue-white {
-      background: linear-gradient(
-        110deg,
-        #0f172a 0%,
-        #0f172a 32%,
-        #0284c7 45%,
-        #2563eb 50%,
-        #06b6d4 55%,
-        #0f172a 68%,
-        #0f172a 100%
-      );
+      background: linear-gradient(110deg,
+          #0f172a 0%,
+          #0f172a 32%,
+          #0284c7 45%,
+          #2563eb 50%,
+          #06b6d4 55%,
+          #0f172a 68%,
+          #0f172a 100%);
       background-size: 240% 100%;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
     @keyframes runningBlueStream {
-      0% { background-position: 120% 50%; }
-      100% { background-position: -120% 50%; }
+      0% {
+        background-position: 120% 50%;
+      }
+
+      100% {
+        background-position: -120% 50%;
+      }
     }
+
     @keyframes gradientFlow {
-      0% { background-position: 0% center; }
-      100% { background-position: 200% center; }
+      0% {
+        background-position: 0% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
     }
 
     /* ROLLING FLOWERS ANIMATION */
     @keyframes flowerRoll {
-      0% { transform: rotate(0deg) scale(1); }
-      50% { transform: rotate(180deg) scale(1.08); }
-      100% { transform: rotate(360deg) scale(1); }
+      0% {
+        transform: rotate(0deg) scale(1);
+      }
+
+      50% {
+        transform: rotate(180deg) scale(1.08);
+      }
+
+      100% {
+        transform: rotate(360deg) scale(1);
+      }
     }
+
     @keyframes flowerRollReverse {
-      0% { transform: rotate(360deg) scale(1); }
-      50% { transform: rotate(180deg) scale(1.1); }
-      100% { transform: rotate(0deg) scale(1); }
+      0% {
+        transform: rotate(360deg) scale(1);
+      }
+
+      50% {
+        transform: rotate(180deg) scale(1.1);
+      }
+
+      100% {
+        transform: rotate(0deg) scale(1);
+      }
     }
+
     @keyframes leafSway {
-      0%, 100% { transform: rotate(-6deg) translateY(0px); }
-      50% { transform: rotate(8deg) translateY(-2px); }
+
+      0%,
+      100% {
+        transform: rotate(-6deg) translateY(0px);
+      }
+
+      50% {
+        transform: rotate(8deg) translateY(-2px);
+      }
     }
+
     .animate-flower-roll {
       animation: flowerRoll 6s linear infinite;
       transform-origin: center;
       transform-box: fill-box;
     }
+
     .animate-flower-roll-fast {
       animation: flowerRoll 3.8s linear infinite;
       transform-origin: center;
       transform-box: fill-box;
     }
+
     .animate-flower-reverse {
       animation: flowerRollReverse 5s linear infinite;
       transform-origin: center;
       transform-box: fill-box;
     }
+
     .animate-leaf-sway {
       animation: leafSway 3.2s ease-in-out infinite;
       transform-origin: bottom center;
       transform-box: fill-box;
     }
+
     .group:hover .animate-flower-roll,
     .group:hover .animate-flower-roll-fast,
     .group:hover .animate-flower-reverse {
@@ -172,11 +222,24 @@
 
     /* HERO WAVE FLOW */
     @keyframes waveSlide {
-      0%, 100% { transform: translateX(0px) scaleY(1); }
-      50% { transform: translateX(-28px) scaleY(1.12); }
+
+      0%,
+      100% {
+        transform: translateX(0px) scaleY(1);
+      }
+
+      50% {
+        transform: translateX(-28px) scaleY(1.12);
+      }
     }
-    .animate-wave-1 { animation: waveSlide 7s ease-in-out infinite; }
-    .animate-wave-2 { animation: waveSlide 9s ease-in-out infinite reverse; }
+
+    .animate-wave-1 {
+      animation: waveSlide 7s ease-in-out infinite;
+    }
+
+    .animate-wave-2 {
+      animation: waveSlide 9s ease-in-out infinite reverse;
+    }
 
     /* 3D TILT & CURSOR SPOTLIGHT CARDS */
     .tilt-card {
@@ -185,21 +248,21 @@
       transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
       will-change: transform;
     }
+
     .tilt-card::before {
       content: "";
       position: absolute;
       inset: 0;
       border-radius: inherit;
-      background: radial-gradient(
-        420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-        rgba(56, 189, 248, 0.14),
-        transparent 45%
-      );
+      background: radial-gradient(420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+          rgba(56, 189, 248, 0.14),
+          transparent 45%);
       opacity: 0;
       transition: opacity 0.3s ease;
       pointer-events: none;
       z-index: 2;
     }
+
     .tilt-card:hover::before {
       opacity: 1;
     }
@@ -207,24 +270,56 @@
     .ring-electric {
       box-shadow: inset 0 0 0 1.5px rgba(14, 165, 233, 0.45), 0 0 30px rgba(37, 99, 235, 0.22);
     }
+
     .shadow-elegant {
       box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.65);
     }
 
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
-    .animate-blink { animation: blink 1s infinite; }
+    @keyframes blink {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .animate-blink {
+      animation: blink 1s infinite;
+    }
 
     @keyframes floatSlow {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-6px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
     }
-    .animate-float { animation: floatSlow 4s ease-in-out infinite; }
+
+    .animate-float {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
 
     @keyframes scanline {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(220%); }
+      0% {
+        transform: translateY(-100%);
+      }
+
+      100% {
+        transform: translateY(220%);
+      }
     }
-    .animate-scan { animation: scanline 4.5s linear infinite; }
+
+    .animate-scan {
+      animation: scanline 4.5s linear infinite;
+    }
 
     /* Scroll Reveal */
     .reveal {
@@ -232,6 +327,7 @@
       transform: translateY(24px);
       transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
@@ -239,9 +335,17 @@
 
     /* Heart Confetti Particle */
     @keyframes heartFloatUp {
-      0% { opacity: 1; transform: translate(0, 0) scale(0.8) rotate(0deg); }
-      100% { opacity: 0; transform: translate(var(--tx), var(--ty)) scale(1.35) rotate(var(--rot)); }
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(0.8) rotate(0deg);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(var(--tx), var(--ty)) scale(1.35) rotate(var(--rot));
+      }
     }
+
     .heart-particle {
       position: fixed;
       pointer-events: none;
@@ -253,38 +357,56 @@
     .magnetic {
       transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
     }
+
     .no-tilt-mobile {
       touch-action: none;
     }
   </style>
 </head>
+
 <body class="overflow-x-hidden selection:bg-sky-500 selection:text-white">
 
   <!-- Top Scroll Progress Bar -->
-  <div id="scrollBar" class="fixed left-0 right-0 top-0 z-50 h-[3px] gradient-electric origin-left scale-x-0 transition-transform duration-75"></div>
+  <div id="scrollBar"
+    class="fixed left-0 right-0 top-0 z-50 h-[3px] gradient-electric origin-left scale-x-0 transition-transform duration-75">
+  </div>
 
   <!-- Subtle Grid & Ambient Glow Background -->
   <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
     <div class="absolute inset-0 grid-bg"></div>
-    <div id="ambientOrb1" class="absolute top-24 left-1/4 w-[440px] h-[440px] bg-blue-600/10 rounded-full blur-[150px] transition-transform duration-700"></div>
-    <div id="ambientOrb2" class="absolute bottom-20 right-1/4 w-[440px] h-[440px] bg-cyan-500/10 rounded-full blur-[150px] transition-transform duration-700"></div>
+    <div id="ambientOrb1"
+      class="absolute top-24 left-1/4 w-[440px] h-[440px] bg-blue-600/10 rounded-full blur-[150px] transition-transform duration-700">
+    </div>
+    <div id="ambientOrb2"
+      class="absolute bottom-20 right-1/4 w-[440px] h-[440px] bg-cyan-500/10 rounded-full blur-[150px] transition-transform duration-700">
+    </div>
   </div>
 
   <!-- RIGHT-SIDE FLOATING SECTION INDICATOR DOT (Exact Match to Reference Screenshots) -->
   <div class="hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 z-40 flex-col items-center gap-2 group">
     <!-- Expandable Section Dots on Hover -->
-    <div class="flex flex-col items-center gap-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 mb-1">
-      <a href="#top" data-sec="top" title="Hero" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#about" data-sec="about" title="About" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#skills" data-sec="skills" title="Skills" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#projects" data-sec="projects" title="Projects" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#experience" data-sec="experience" title="Experience" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#references" data-sec="references" title="References" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
-      <a href="#contact" data-sec="contact" title="Contact" class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+    <div
+      class="flex flex-col items-center gap-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 mb-1">
+      <a href="#top" data-sec="top" title="Hero"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#about" data-sec="about" title="About"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#skills" data-sec="skills" title="Skills"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#projects" data-sec="projects" title="Projects"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#experience" data-sec="experience" title="Experience"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#references" data-sec="references" title="References"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
+      <a href="#contact" data-sec="contact" title="Contact"
+        class="sec-dot w-2 h-2 rounded-full bg-white/30 hover:bg-sky-400 transition"></a>
     </div>
     <!-- Primary Circle Dot -->
-    <button onclick="scrollToNextSection()" title="Next Section" class="relative flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.03] backdrop-blur-md hover:border-sky-400/60 transition cursor-pointer">
-      <span id="rightActiveDot" class="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_#38bdf8] transition-transform duration-300"></span>
+    <button onclick="scrollToNextSection()" title="Next Section"
+      class="relative flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/[0.03] backdrop-blur-md hover:border-sky-400/60 transition cursor-pointer">
+      <span id="rightActiveDot"
+        class="h-1.5 w-1.5 rounded-full bg-white shadow-[0_0_8px_#38bdf8] transition-transform duration-300"></span>
       <span class="absolute inset-0 rounded-full border border-sky-400/30 animate-ping opacity-30"></span>
     </button>
   </div>
@@ -295,33 +417,41 @@
       <nav class="glass-strong flex items-center justify-between rounded-full px-4 py-2">
         <!-- Brand Logo with Running Blue-in-White Name -->
         <a href="#top" class="magnetic flex items-center gap-2.5 pl-1 font-semibold tracking-tight">
-          <span class="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 text-xs font-bold text-white shadow">K</span>
-          <span class="text-sm font-bold"><span class="running-blue-white">Kathuskan</span><span class="text-sky-400">.in</span></span>
+          <span
+            class="grid h-7 w-7 place-items-center rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 text-xs font-bold text-white shadow">K</span>
+          <span class="text-sm font-bold"><span class="running-blue-white">Kathuskan</span><span
+              class="text-sky-400">.in</span></span>
         </a>
 
         <!-- Center Navigation Links -->
         <ul class="hidden items-center gap-1 lg:flex text-[13px] font-medium text-slate-400">
           <li><a href="#about" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">About</a></li>
           <li><a href="#skills" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Skills</a></li>
-          <li><a href="#projects" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Projects</a></li>
-          <li><a href="#experience" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Experience</a></li>
-          <li><a href="#references" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">References</a></li>
+          <li><a href="#projects" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Projects</a>
+          </li>
+          <li><a href="#experience" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Experience</a>
+          </li>
+          <li><a href="#references" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">References</a>
+          </li>
           <li><a href="#contact" class="nav-link rounded-full px-3 py-1.5 hover:text-white transition">Contact</a></li>
         </ul>
 
         <!-- Right Actions: White Resume Pill + Sun Toggle + Blue AI Pill -->
         <div class="flex items-center gap-2">
-          <a href="Kathuskan_Thavarajah_CV.pdf" download onclick="incrementDownloads()" class="magnetic hidden sm:inline-flex items-center gap-1.5 rounded-full bg-white text-slate-950 px-4 py-1.5 text-xs font-semibold hover:bg-slate-200 transition shadow">
+          <a href="Kathuskan_Thavarajah_CV.pdf" download onclick="incrementDownloads()"
+            class="magnetic hidden sm:inline-flex items-center gap-1.5 rounded-full bg-white text-slate-950 px-4 py-1.5 text-xs font-semibold hover:bg-slate-200 transition shadow">
             <span>Resume</span>
             <i data-lucide="download" class="w-3.5 h-3.5"></i>
           </a>
-          <button id="themeBtn" aria-label="Toggle theme" class="magnetic grid h-8 w-8 place-items-center rounded-full bg-white/[0.05] border border-white/10 text-slate-300 hover:text-sky-400 transition cursor-pointer">
+          <button id="themeBtn" aria-label="Toggle theme"
+            class="magnetic grid h-8 w-8 place-items-center rounded-full bg-white/[0.05] border border-white/10 text-slate-300 hover:text-sky-400 transition cursor-pointer">
             <i data-lucide="sun" class="w-3.5 h-3.5"></i>
           </button>
-          <!-- <button onclick="toggleAssistant()" class="magnetic inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-600 to-sky-500 px-3.5 py-1.5 text-xs font-semibold text-white shadow hover:opacity-95 transition cursor-pointer">
+          <button onclick="toggleAssistant()"
+            class="magnetic inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-blue-600 to-sky-500 px-3.5 py-1.5 text-xs font-semibold text-white shadow hover:opacity-95 transition cursor-pointer">
             <i data-lucide="sparkles" class="w-3.5 h-3.5 animate-spin" style="animation-duration: 6s;"></i>
             <span>Voice AI</span>
-          </button> -->
+          </button>
         </div>
       </nav>
     </div>
@@ -341,14 +471,20 @@
             </linearGradient>
           </defs>
           <g class="animate-wave-1">
-            <path d="M -100 180 C 300 205, 600 155, 950 180 S 1350 205, 1700 180" fill="none" stroke="url(#hero-wave)" stroke-width="1.2" />
-            <path d="M -100 216 C 300 245, 600 185, 950 216 S 1350 245, 1700 216" fill="none" stroke="url(#hero-wave)" stroke-width="1.2" />
-            <path d="M -100 252 C 300 285, 600 215, 950 252 S 1350 285, 1700 252" fill="none" stroke="url(#hero-wave)" stroke-width="1.2" />
+            <path d="M -100 180 C 300 205, 600 155, 950 180 S 1350 205, 1700 180" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1.2" />
+            <path d="M -100 216 C 300 245, 600 185, 950 216 S 1350 245, 1700 216" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1.2" />
+            <path d="M -100 252 C 300 285, 600 215, 950 252 S 1350 285, 1700 252" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1.2" />
           </g>
           <g class="animate-wave-2">
-            <path d="M -100 198 C 300 225, 600 170, 950 198 S 1350 225, 1700 198" fill="none" stroke="url(#hero-wave)" stroke-width="1" />
-            <path d="M -100 234 C 300 265, 600 200, 950 234 S 1350 265, 1700 234" fill="none" stroke="url(#hero-wave)" stroke-width="1" />
-            <path d="M -100 270 C 300 305, 600 230, 950 270 S 1350 305, 1700 270" fill="none" stroke="url(#hero-wave)" stroke-width="1" />
+            <path d="M -100 198 C 300 225, 600 170, 950 198 S 1350 225, 1700 198" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1" />
+            <path d="M -100 234 C 300 265, 600 200, 950 234 S 1350 265, 1700 234" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1" />
+            <path d="M -100 270 C 300 305, 600 230, 950 270 S 1350 305, 1700 270" fill="none" stroke="url(#hero-wave)"
+              stroke-width="1" />
           </g>
         </svg>
       </div>
@@ -356,7 +492,8 @@
       <div class="mx-auto grid max-w-[1250px] w-full grid-cols-1 items-center gap-12 px-8 lg:grid-cols-[1.2fr_0.85fr]">
         <!-- Left Column -->
         <div class="relative z-10 reveal">
-          <h1 class="text-[3.6rem] font-bold leading-[1.04] tracking-tight sm:text-[4.5rem] lg:text-[4.4rem] text-slate-900 dark:text-white">
+          <h1
+            class="text-[3.6rem] font-bold leading-[1.04] tracking-tight sm:text-[4.5rem] lg:text-[4.4rem] text-slate-900 dark:text-white">
             Building the <br />
             <span class="gradient-text">intelligent web</span> <br />
             one model at a <br />
@@ -365,39 +502,53 @@
 
           <!-- 4 Colored Role Pills -->
           <div class="mt-8 flex flex-wrap gap-3">
-            <span class="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-mono font-medium text-blue-400 hover:scale-105 transition">AI / ML</span>
-            <span class="rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-1.5 text-xs font-mono font-medium text-purple-300 hover:scale-105 transition">Data Science & NLP</span>
-            <span class="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-mono font-medium text-cyan-300 hover:scale-105 transition">Databricks & BI</span>
-            <span class="rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-mono font-medium text-indigo-300 hover:scale-105 transition">Full-Stack Dev</span>
+            <span
+              class="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-mono font-medium text-blue-400 hover:scale-105 transition">AI
+              / ML</span>
+            <span
+              class="rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-1.5 text-xs font-mono font-medium text-purple-300 hover:scale-105 transition">Data
+              Science & NLP</span>
+            <span
+              class="rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-mono font-medium text-cyan-300 hover:scale-105 transition">Databricks
+              & BI</span>
+            <span
+              class="rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-mono font-medium text-indigo-300 hover:scale-105 transition">Full-Stack
+              Dev</span>
           </div>
 
           <!-- Typewriter Bio Line with RUNNING BLUE IN WHITE COLOR NAME TEXT -->
           <p class="mt-7 max-w-lg text-slate-400 sm:text-lg leading-relaxed">
             I'm <span class="font-bold text-lg running-blue-white">Kathuskan Thavarajah</span> — a
-            <span id="typewriter" class="font-semibold text-sky-400">Data Science Undergraduate</span><span class="inline-block w-[2px] h-5 align-middle bg-sky-400 animate-blink ml-0.5"></span>
-            <span class="block mt-2 text-slate-400">shipping end-to-end ML applications, interactive BI dashboards, and full-stack web products from idea to scale.</span>
+            <span id="typewriter" class="font-semibold text-sky-400">Data Science Undergraduate</span><span
+              class="inline-block w-[2px] h-5 align-middle bg-sky-400 animate-blink ml-0.5"></span>
+            <span class="block mt-2 text-slate-400">shipping end-to-end ML applications, interactive BI dashboards, and
+              full-stack web products from idea to scale.</span>
           </p>
 
           <!-- Action Row: Rolling Flower Button + 5 Circular Icons + Download Counter Badge -->
           <div class="mt-10 flex flex-wrap items-center gap-6">
             <!-- ROLLING FLOWER & BOTANICAL DECORATED BUTTON (Matches Screenshot 2) -->
-            <a href="#projects" class="magnetic group relative inline-flex items-center justify-center rounded-full bg-slate-900/95 dark:bg-[#0c1322] border border-sky-400/35 px-10 py-4 text-sm font-semibold text-white shadow-elegant hover:border-sky-400/80 transition">
+            <a href="#projects"
+              class="magnetic group relative inline-flex items-center justify-center rounded-full bg-slate-900/95 dark:bg-[#0c1322] border border-sky-400/35 px-10 py-4 text-sm font-semibold text-white shadow-elegant hover:border-sky-400/80 transition">
               <!-- Top-Left Rolling 5-Petal Cyan Flower + Leaves -->
-              <svg class="pointer-events-none absolute -left-4 -top-4 w-12 h-12 overflow-visible" viewBox="0 0 64 64" fill="none">
+              <svg class="pointer-events-none absolute -left-4 -top-4 w-12 h-12 overflow-visible" viewBox="0 0 64 64"
+                fill="none">
                 <defs>
                   <linearGradient id="flowerPetalCyan" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#67e8f9"/>
-                    <stop offset="100%" stop-color="#0284c7"/>
+                    <stop offset="0%" stop-color="#67e8f9" />
+                    <stop offset="100%" stop-color="#0284c7" />
                   </linearGradient>
                   <linearGradient id="flowerPetalBlue" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#38bdf8"/>
-                    <stop offset="100%" stop-color="#1d4ed8"/>
+                    <stop offset="0%" stop-color="#38bdf8" />
+                    <stop offset="100%" stop-color="#1d4ed8" />
                   </linearGradient>
                 </defs>
                 <!-- Swaying Accent Leaves -->
                 <g class="animate-leaf-sway">
-                  <path d="M34 18 C36 6, 46 4, 48 12 C44 18, 38 20, 34 18 Z" fill="url(#flowerPetalBlue)" opacity="0.85"/>
-                  <path d="M18 36 C6 38, 4 48, 12 50 C18 46, 20 40, 18 36 Z" fill="url(#flowerPetalBlue)" opacity="0.85"/>
+                  <path d="M34 18 C36 6, 46 4, 48 12 C44 18, 38 20, 34 18 Z" fill="url(#flowerPetalBlue)"
+                    opacity="0.85" />
+                  <path d="M18 36 C6 38, 4 48, 12 50 C18 46, 20 40, 18 36 Z" fill="url(#flowerPetalBlue)"
+                    opacity="0.85" />
                 </g>
                 <!-- Rolling 5-Petal Flower -->
                 <g class="animate-flower-roll">
@@ -411,10 +562,13 @@
               </svg>
 
               <!-- Bottom-Right Rolling 5-Petal Cyan Flower + Leaves -->
-              <svg class="pointer-events-none absolute -right-4 -bottom-4 w-12 h-12 overflow-visible" viewBox="0 0 64 64" fill="none">
+              <svg class="pointer-events-none absolute -right-4 -bottom-4 w-12 h-12 overflow-visible"
+                viewBox="0 0 64 64" fill="none">
                 <g class="animate-leaf-sway">
-                  <path d="M30 46 C28 58, 18 60, 16 52 C20 46, 26 44, 30 46 Z" fill="url(#flowerPetalBlue)" opacity="0.85"/>
-                  <path d="M46 28 C58 26, 60 16, 52 14 C46 18, 44 24, 46 28 Z" fill="url(#flowerPetalBlue)" opacity="0.85"/>
+                  <path d="M30 46 C28 58, 18 60, 16 52 C20 46, 26 44, 30 46 Z" fill="url(#flowerPetalBlue)"
+                    opacity="0.85" />
+                  <path d="M46 28 C58 26, 60 16, 52 14 C46 18, 44 24, 46 28 Z" fill="url(#flowerPetalBlue)"
+                    opacity="0.85" />
                 </g>
                 <g class="animate-flower-reverse">
                   <ellipse cx="40" cy="30" rx="4.8" ry="9" fill="url(#flowerPetalCyan)" />
@@ -434,22 +588,36 @@
 
             <!-- 5 Social & Utility Icons -->
             <div class="flex items-center gap-2.5">
-              <a href="https://github.com/Kathuskan" target="_blank" rel="noreferrer" aria-label="GitHub" class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <a href="https://github.com/Kathuskan" target="_blank" rel="noreferrer" aria-label="GitHub"
+                class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
               </a>
-              <a href="https://www.linkedin.com/in/kathuskan-thavarajah/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/kathuskan-thavarajah/" target="_blank" rel="noreferrer"
+                aria-label="LinkedIn"
+                class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
               </a>
-              <a href="mailto:TKathuskan@gmail.com" aria-label="Email" class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+              <a href="mailto:TKathuskan@gmail.com" aria-label="Email"
+                class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
                 <i data-lucide="mail" class="w-5 h-5"></i>
               </a>
-              <button onclick="sharePortfolio()" aria-label="Share Portfolio" class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition cursor-pointer">
+              <button onclick="sharePortfolio()" aria-label="Share Portfolio"
+                class="magnetic flex h-12 w-12 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition cursor-pointer">
                 <i data-lucide="share-2" class="w-5 h-5"></i>
               </button>
 
               <!-- CV Download Icon with Floating Downloads Pill underneath -->
               <div class="relative flex flex-col items-center">
-                <a href="Kathuskan_Thavarajah_CV.pdf" download onclick="incrementDownloads()" aria-label="Download CV" class="magnetic flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 border border-blue-500/40 text-sky-400 hover:scale-105 transition">
+                <a href="Kathuskan_Thavarajah_CV.pdf" download onclick="incrementDownloads()" aria-label="Download CV"
+                  class="magnetic flex h-12 w-12 items-center justify-center rounded-full bg-blue-600/20 border border-blue-500/40 text-sky-400 hover:scale-105 transition">
                   <i data-lucide="file-text" class="w-5 h-5"></i>
                 </a>
                 <!-- <div class="absolute -bottom-7 whitespace-nowrap rounded-full bg-[#0b1324] border border-blue-500/30 px-2.5 py-0.5 text-[10px] font-medium text-sky-400 shadow flex items-center gap-1">
@@ -468,14 +636,20 @@
             <div class="absolute inset-4 rounded-[2.5rem] bg-sky-500/15 blur-[55px] -z-10"></div>
 
             <!-- Main Rounded Square Frame with Light Ice-Blue Studio Backdrop -->
-            <div class="group relative w-full h-full rounded-[2rem] p-1.5 bg-white/[0.06] border border-white/15 shadow-elegant">
-              <div class="relative overflow-hidden rounded-[1.65rem] w-full h-full bg-gradient-to-b from-[#d6e4ff] via-[#e2ecff] to-[#c7dbff]">
-                <img src="Stylish_cv.png" alt="Kathuskan Thavarajah" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" style="pointer-events:none; -webkit-user-select:none; user-select:none;" oncontextmenu="return false;" draggable="false" />
+            <div
+              class="group relative w-full h-full rounded-[2rem] p-1.5 bg-white/[0.06] border border-white/15 shadow-elegant">
+              <div
+                class="relative overflow-hidden rounded-[1.65rem] w-full h-full bg-gradient-to-b from-[#d6e4ff] via-[#e2ecff] to-[#c7dbff]">
+                <img src="Stylish_cv.png" alt="Kathuskan Thavarajah"
+                  class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  style="pointer-events:none; -webkit-user-select:none; user-select:none;" oncontextmenu="return false;"
+                  draggable="false" />
               </div>
             </div>
 
             <!-- Top Right Floating Pill Badge -->
-            <div class="absolute -top-4 -right-5 z-20 flex items-center rounded-2xl bg-[#111827]/90 backdrop-blur-xl border border-white/15 px-4 py-2.5 shadow-elegant animate-float">
+            <div
+              class="absolute -top-4 -right-5 z-20 flex items-center rounded-2xl bg-[#111827]/90 backdrop-blur-xl border border-white/15 px-4 py-2.5 shadow-elegant animate-float">
               <div>
                 <div class="text-[9px] font-mono uppercase tracking-widest text-slate-400">PROJECTS</div>
                 <div class="text-xs font-bold text-white mt-0.5">AI & Data Products</div>
@@ -483,7 +657,9 @@
             </div>
 
             <!-- Bottom Left Floating Pill Badge -->
-            <div class="absolute -bottom-4 -left-5 z-20 flex items-center rounded-2xl bg-[#111827]/90 backdrop-blur-xl border border-white/15 px-4 py-2.5 shadow-elegant animate-float" style="animation-delay: 1.5s;">
+            <div
+              class="absolute -bottom-4 -left-5 z-20 flex items-center rounded-2xl bg-[#111827]/90 backdrop-blur-xl border border-white/15 px-4 py-2.5 shadow-elegant animate-float"
+              style="animation-delay: 1.5s;">
               <div>
                 <div class="text-[9px] font-mono uppercase tracking-widest text-slate-400">FOCUS</div>
                 <div class="text-xs font-bold text-white mt-0.5">AI/ML & Data Science</div>
@@ -498,9 +674,11 @@
     <section id="about" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">01</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">01</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>About
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -552,41 +730,52 @@
           <!-- Bio + Education Timeline -->
           <div class="reveal">
             <p class="text-lg text-slate-400 leading-relaxed">
-              I design and ship end-to-end data products — from exploratory data analysis, feature engineering, and statistical time-series modeling to full-stack web interfaces and interactive Power BI dashboards. My background as an <span class="text-slate-900 dark:text-white font-medium">NVQ Level 4 Certified Graphic Designer</span> brings visual clarity to every product I build.
+              I design and ship end-to-end data products — from exploratory data analysis, feature engineering, and
+              statistical time-series modeling to full-stack web interfaces and interactive Power BI dashboards. My
+              background as an <span class="text-slate-900 dark:text-white font-medium">NVQ Level 4 Certified Graphic
+                Designer</span> brings visual clarity to every product I build.
             </p>
             <ol class="mt-9 relative pl-6 space-y-8 border-l border-white/10">
               <li class="relative">
-                <span class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
+                <span
+                  class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
                   <i data-lucide="graduation-cap" class="w-3.5 h-3.5"></i>
                 </span>
                 <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
                   <span class="font-mono text-xs text-sky-400">2024 — Present</span>
                   <h4 class="font-semibold">BSc (Hons) in Data Science</h4>
                 </div>
-                <p class="mt-1 text-sm text-slate-400">Department of Computing & Information Systems, Faculty of Computing, Sabaragamuwa University of Sri Lanka. Coursework: Machine Learning, Regression Analysis, Probability Theory, Applied Data Mining, Data Pre-Processing, Data Visualization.</p>
+                <p class="mt-1 text-sm text-slate-400">Department of Computing & Information Systems, Faculty of
+                  Computing, Sabaragamuwa University of Sri Lanka. Coursework: Machine Learning, Regression Analysis,
+                  Probability Theory, Applied Data Mining, Data Pre-Processing, Data Visualization.</p>
               </li>
               <li class="relative">
-                <span class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
+                <span
+                  class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
                   <i data-lucide="award" class="w-3.5 h-3.5"></i>
                 </span>
                 <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
                   <span class="font-mono text-xs text-sky-400">Certified</span>
                   <h4 class="font-semibold">NVQ Level 4 — Computer Graphic Designer</h4>
                 </div>
-                <p class="mt-1 text-sm text-slate-400">5+ years of visual design experience across Adobe Photoshop, Illustrator, and digital brand systems.</p>
+                <p class="mt-1 text-sm text-slate-400">5+ years of visual design experience across Adobe Photoshop,
+                  Illustrator, and digital brand systems.</p>
               </li>
               <li class="relative">
-                <span class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
+                <span
+                  class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
                   <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
                 </span>
                 <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
                   <span class="font-mono text-xs text-sky-400">GCE A/L</span>
                   <h4 class="font-semibold">GCE Advanced Level — Physical Science Stream</h4>
                 </div>
-                <p class="mt-1 text-sm text-slate-400">Achieved A2C results in Physical Science stream. BT/PD/Paddiruppu MMV(N.S), Batticaloa.</p>
+                <p class="mt-1 text-sm text-slate-400">Achieved A2C results in Physical Science stream. BT/PD/Paddiruppu
+                  MMV(N.S), Batticaloa.</p>
               </li>
               <li class="relative">
-                <span class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
+                <span
+                  class="absolute -left-[37px] grid h-7 w-7 place-items-center rounded-full gradient-electric text-white shadow">
                   <i data-lucide="school" class="w-3.5 h-3.5"></i>
                 </span>
                 <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
@@ -605,9 +794,11 @@
     <section id="skills" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">02</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">02</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>Stack
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -618,182 +809,261 @@
 
         <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <!-- Card 1 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20">
                 <i data-lucide="code-xml" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Languages</h4>
-                  <span data-count="95" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">95%</span>
+                  <span data-count="95" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">95%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Core programming & query languages.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">Python</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">SQL</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">R</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">JavaScript</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">Java</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">Python</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">SQL</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">R</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">JavaScript</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-300">Java</span>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 border border-purple-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 border border-purple-500/20">
                 <i data-lucide="brain" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Machine Learning & NLP</h4>
-                  <span data-count="93" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">93%</span>
+                  <span data-count="93" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">93%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Predictive modeling & text pipelines.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Scikit-learn</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Random Forest</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">XGBoost</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">TF-IDF & VADER</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Statsmodels</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Scikit-learn</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Random
+                Forest</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">XGBoost</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">TF-IDF
+                & VADER</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-purple-500/20 bg-purple-500/10 text-purple-300">Statsmodels</span>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-500/20">
                 <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Big Data & BI</h4>
-                  <span data-count="91" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">91%</span>
+                  <span data-count="91" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">91%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Distributed data & visual analytics.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Databricks</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">PySpark</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Power BI</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Pandas & NumPy</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Seaborn</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Databricks</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">PySpark</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Power
+                BI</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Pandas
+                & NumPy</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300">Seaborn</span>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0 border border-sky-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0 border border-sky-500/20">
                 <i data-lucide="layers" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Full-Stack Web</h4>
-                  <span data-count="90" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">90%</span>
+                  <span data-count="90" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">90%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Modern APIs & responsive frontends.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">FastAPI</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">React.js</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Node.js & Express</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Tailwind CSS</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Laravel</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">FastAPI</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">React.js</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Node.js
+                & Express</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Tailwind
+                CSS</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-300">Laravel</span>
             </div>
           </div>
 
           <!-- Card 5 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/20">
                 <i data-lucide="database" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Databases & Tools</h4>
-                  <span data-count="90" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">90%</span>
+                  <span data-count="90" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">90%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Storage, version control & workflow.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">MySQL</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">MongoDB</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">Git & GitHub</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">VS Code</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">MySQL</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">MongoDB</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">Git
+                & GitHub</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-300">VS
+                Code</span>
             </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center shrink-0 border border-rose-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-rose-500/10 text-rose-400 flex items-center justify-center shrink-0 border border-rose-500/20">
                 <i data-lucide="palette" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Creative & UI Design</h4>
-                  <span data-count="95" data-suffix="%" class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20">95%</span>
+                  <span data-count="95" data-suffix="%"
+                    class="stat-counter text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20">95%</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">NVQ-4 certified visual storytelling.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Photoshop</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Illustrator</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Canva</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Photoshop</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Illustrator</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-rose-500/20 bg-rose-500/10 text-rose-300">Canva</span>
             </div>
           </div>
 
           <!-- Card 7: Cloud & Computer Vision -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex gap-3.5 items-start">
-              <div class="w-10 h-10 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20">
+              <div
+                class="w-10 h-10 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20">
                 <i data-lucide="cloud" class="w-5 h-5"></i>
               </div>
               <div class="flex-1">
                 <div class="flex items-center justify-between">
                   <h4 class="font-bold text-sm">Cloud & Computer Vision</h4>
-                  <span class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Learning</span>
+                  <span
+                    class="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Learning</span>
                 </div>
                 <p class="text-[11px] text-slate-400 mt-1">Cloud platforms & AI vision systems.</p>
               </div>
             </div>
             <div class="flex flex-wrap gap-1.5 mt-4">
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Microsoft Azure</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">AWS</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Azure ML</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Computer Vision</span>
-              <span class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">OpenCV</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Microsoft
+                Azure</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">AWS</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Azure
+                ML</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">Computer
+                Vision</span>
+              <span
+                class="text-[10px] font-semibold px-2.5 py-1 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-300">OpenCV</span>
             </div>
           </div>
 
           <!-- Wide Exploring Card -->
-          <div class="tilt-card group rounded-3xl glass-strong p-5 sm:col-span-2 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card group rounded-3xl glass-strong p-5 sm:col-span-2 flex flex-col justify-between hover:ring-electric transition reveal">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 h-full">
               <div class="space-y-3">
                 <div class="flex items-center gap-2.5 text-sky-400">
-                  <div class="w-9 h-9 rounded-xl bg-sky-500/10 flex items-center justify-center border border-sky-500/20">
+                  <div
+                    class="w-9 h-9 rounded-xl bg-sky-500/10 flex items-center justify-center border border-sky-500/20">
                     <i data-lucide="sparkles" class="w-5 h-5 animate-pulse"></i>
                   </div>
                   <span class="font-bold text-sm text-slate-900 dark:text-white">Currently Exploring</span>
                 </div>
                 <div class="flex flex-wrap gap-1.5">
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">AI Agents & MCP</span>
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Scrapy + Playwright Pipelines</span>
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">SHAP Explainability</span>
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">SPARQL Knowledge Graphs</span>
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Azure Cloud & ML Studio</span>
-                  <span class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Computer Vision (OpenCV)</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">AI
+                    Agents & MCP</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Scrapy
+                    + Playwright Pipelines</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">SHAP
+                    Explainability</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">SPARQL
+                    Knowledge Graphs</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Azure
+                    Cloud & ML Studio</span>
+                  <span
+                    class="text-[10px] font-bold px-2.5 py-1 rounded-full border border-sky-500/25 bg-sky-500/10 text-sky-300">Computer
+                    Vision (OpenCV)</span>
                 </div>
-                <p class="text-[11px] text-slate-400">Building automated book evaluation pipelines and agentic workflows.</p>
+                <p class="text-[11px] text-slate-400">Building automated book evaluation pipelines and agentic
+                  workflows.</p>
               </div>
             </div>
           </div>
@@ -805,9 +1075,11 @@
     <section id="projects" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">03</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">03</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>Products & Projects
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -821,18 +1093,25 @@
           <div class="tilt-card group relative rounded-3xl glass-strong p-1.5 shadow-elegant reveal">
             <div class="relative overflow-hidden rounded-[1.4rem] glass-strong flex flex-col md:flex-row items-stretch">
               <!-- Left Visual Showcase Banner (Matches Screenshot 3 Style) -->
-              <div class="relative w-full md:w-1/2 min-h-[280px] bg-gradient-to-br from-[#0c1938] via-[#091326] to-[#072638] p-7 flex flex-col justify-between overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
+              <div
+                class="relative w-full md:w-1/2 min-h-[280px] bg-gradient-to-br from-[#0c1938] via-[#091326] to-[#072638] p-7 flex flex-col justify-between overflow-hidden border-b md:border-b-0 md:border-r border-white/10">
                 <!-- Animated Scanline Overlay -->
-                <div class="pointer-events-none absolute inset-x-0 h-24 bg-gradient-to-b from-transparent via-sky-400/10 to-transparent animate-scan"></div>
+                <div
+                  class="pointer-events-none absolute inset-x-0 h-24 bg-gradient-to-b from-transparent via-sky-400/10 to-transparent animate-scan">
+                </div>
                 <div class="relative z-10 flex items-center justify-between">
                   <div class="flex items-center gap-2">
-                    <span class="grid h-8 w-8 place-items-center rounded-xl bg-sky-500/20 border border-sky-400/40 text-sky-300 font-mono text-xs font-bold">AV</span>
+                    <span
+                      class="grid h-8 w-8 place-items-center rounded-xl bg-sky-500/20 border border-sky-400/40 text-sky-300 font-mono text-xs font-bold">AV</span>
                     <div>
                       <div class="text-sm font-bold text-white">AutoValue<span class="text-sky-400">LK</span></div>
-                      <div class="text-[9px] font-mono uppercase tracking-widest text-slate-400">CLEAN. PREDICT. VALUE.</div>
+                      <div class="text-[9px] font-mono uppercase tracking-widest text-slate-400">CLEAN. PREDICT. VALUE.
+                      </div>
                     </div>
                   </div>
-                  <span class="rounded-full bg-blue-500/20 border border-blue-500/30 px-3 py-1 text-[10px] font-mono text-sky-300">11,750 Records</span>
+                  <span
+                    class="rounded-full bg-blue-500/20 border border-blue-500/30 px-3 py-1 text-[10px] font-mono text-sky-300">11,750
+                    Records</span>
                 </div>
 
                 <!-- Center Visual Metric & 3D Badge -->
@@ -842,10 +1121,12 @@
                       Predict Vehicle <br /><span class="text-sky-400">Prices Instantly.</span>
                     </div>
                     <p class="text-xs text-slate-300 mt-2 max-w-xs">
-                      <span class="font-bold text-emerald-400">84.95%</span> predictions within ±20% of market asking price · Held-out <span class="font-mono text-sky-300">R² = 0.739</span>
+                      <span class="font-bold text-emerald-400">84.95%</span> predictions within ±20% of market asking
+                      price · Held-out <span class="font-mono text-sky-300">R² = 0.739</span>
                     </p>
                   </div>
-                  <div class="hidden sm:flex h-24 w-24 shrink-0 rounded-3xl bg-gradient-to-tr from-blue-600/40 to-cyan-400/40 border border-sky-300/40 shadow-[0_0_40px_rgba(14,165,233,0.35)] items-center justify-center group-hover:rotate-6 group-hover:scale-105 transition duration-500">
+                  <div
+                    class="hidden sm:flex h-24 w-24 shrink-0 rounded-3xl bg-gradient-to-tr from-blue-600/40 to-cyan-400/40 border border-sky-300/40 shadow-[0_0_40px_rgba(14,165,233,0.35)] items-center justify-center group-hover:rotate-6 group-hover:scale-105 transition duration-500">
                     <i data-lucide="car-front" class="w-11 h-11 text-sky-200"></i>
                   </div>
                 </div>
@@ -853,7 +1134,8 @@
                 <!-- Bottom Live App Badge -->
                 <div class="relative z-10 flex items-center justify-between">
                   <span class="text-[11px] font-mono text-cyan-300">LKR & Lakhs Real-Time Valuation</span>
-                  <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/90 border border-emerald-500/40 px-3 py-1 text-[10px] font-semibold text-emerald-300 shadow">
+                  <span
+                    class="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/90 border border-emerald-500/40 px-3 py-1 text-[10px] font-semibold text-emerald-300 shadow">
                     <span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <span>Live App</span>
                   </span>
@@ -865,28 +1147,42 @@
                 <div>
                   <!-- Top Feature Pills (Like Screenshot 3) -->
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
+                    <span
+                      class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
                       <i data-lucide="shield-check" class="w-3 h-3 text-sky-400"></i>Grouped CV Validated
                     </span>
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
+                    <span
+                      class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
                       <i data-lucide="zap" class="w-3 h-3 text-cyan-400"></i>FastAPI + React
                     </span>
                   </div>
-                  <span class="inline-flex rounded-full bg-sky-500/10 border border-sky-500/25 px-2.5 py-0.5 text-[9px] font-mono uppercase tracking-widest text-sky-400 font-semibold">ML WEB APPLICATION</span>
+                  <span
+                    class="inline-flex rounded-full bg-sky-500/10 border border-sky-500/25 px-2.5 py-0.5 text-[9px] font-mono uppercase tracking-widest text-sky-400 font-semibold">ML
+                    WEB APPLICATION</span>
                   <h3 class="mt-2.5 text-2xl font-bold tracking-tight">AutoValue LK</h3>
                   <p class="mt-3 text-sm text-slate-400 leading-relaxed">
-                    End-to-end machine learning web application estimating vehicle asking prices in Sri Lanka using brand, model, manufacture year, engine capacity, transmission, fuel type, mileage, and condition. Deployed a tuned Random Forest regression pipeline via FastAPI.
+                    End-to-end machine learning web application estimating vehicle asking prices in Sri Lanka using
+                    brand, model, manufacture year, engine capacity, transmission, fuel type, mileage, and condition.
+                    Deployed a tuned Random Forest regression pipeline via FastAPI.
                   </p>
                 </div>
                 <div class="mt-6">
                   <div class="flex flex-wrap gap-1.5 mb-5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Python</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">FastAPI</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Random Forest</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Scikit-learn</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">React</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Python</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">FastAPI</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Random
+                      Forest</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Scikit-learn</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">React</span>
                   </div>
-                  <a href="https://github.com/kathuskanthavarajah/used_car_valuation_project" target="_blank" rel="noreferrer" class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-5 py-2.5 text-xs font-semibold text-white shadow transition">
+                  <a href="https://github.com/kathuskanthavarajah/used_car_valuation_project" target="_blank"
+                    rel="noreferrer"
+                    class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-5 py-2.5 text-xs font-semibold text-white shadow transition">
                     <span>Launch Platform</span>
                     <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                   </a>
@@ -897,23 +1193,31 @@
 
           <!-- Flagship 2: Shelv Marketplace -->
           <div class="tilt-card group relative rounded-3xl glass-strong p-1.5 shadow-elegant reveal">
-            <div class="relative overflow-hidden rounded-[1.4rem] glass-strong flex flex-col md:flex-row-reverse items-stretch">
+            <div
+              class="relative overflow-hidden rounded-[1.4rem] glass-strong flex flex-col md:flex-row-reverse items-stretch">
               <!-- Right Visual Showcase Banner (Matches AttendAI HUD style in Screenshot 3) -->
-              <div class="relative w-full md:w-1/2 min-h-[280px] bg-gradient-to-br from-[#091e36] via-[#0a1324] to-[#0d2847] p-7 flex flex-col justify-between overflow-hidden border-b md:border-b-0 md:border-l border-white/10">
+              <div
+                class="relative w-full md:w-1/2 min-h-[280px] bg-gradient-to-br from-[#091e36] via-[#0a1324] to-[#0d2847] p-7 flex flex-col justify-between overflow-hidden border-b md:border-b-0 md:border-l border-white/10">
                 <div class="pointer-events-none absolute inset-0 grid-bg opacity-60"></div>
                 <div class="relative z-10 flex items-center justify-between">
-                  <span class="rounded-full bg-sky-500/20 border border-sky-500/30 px-3 py-1 text-[10px] font-mono text-sky-300">MERN E-Commerce</span>
-                  <span class="rounded-full bg-purple-500/20 border border-purple-500/30 px-3 py-1 text-[10px] font-mono text-purple-300">Stripe + COD</span>
+                  <span
+                    class="rounded-full bg-sky-500/20 border border-sky-500/30 px-3 py-1 text-[10px] font-mono text-sky-300">MERN
+                    E-Commerce</span>
+                  <span
+                    class="rounded-full bg-purple-500/20 border border-purple-500/30 px-3 py-1 text-[10px] font-mono text-purple-300">Stripe
+                    + COD</span>
                 </div>
 
                 <!-- Interactive HUD Book Frame -->
-                <div class="relative z-10 my-5 mx-auto max-w-xs w-full rounded-2xl border border-sky-400/30 bg-slate-950/60 p-4 backdrop-blur-md">
+                <div
+                  class="relative z-10 my-5 mx-auto max-w-xs w-full rounded-2xl border border-sky-400/30 bg-slate-950/60 p-4 backdrop-blur-md">
                   <div class="flex items-center justify-between text-[10px] font-mono text-sky-400 mb-2">
                     <span>● ORDER_TRACKING_HUD</span>
                     <span>RBAC: ACTIVE</span>
                   </div>
                   <div class="flex items-center gap-3.5">
-                    <div class="h-14 w-14 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0 group-hover:scale-110 transition">
+                    <div
+                      class="h-14 w-14 rounded-xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 shrink-0 group-hover:scale-110 transition">
                       <i data-lucide="book-open-check" class="w-7 h-7"></i>
                     </div>
                     <div>
@@ -925,7 +1229,8 @@
 
                 <div class="relative z-10 flex items-center justify-between">
                   <span class="text-[11px] font-mono text-sky-300">Buyer · Seller · Admin Workflows</span>
-                  <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/90 border border-emerald-500/40 px-3 py-1 text-[10px] font-semibold text-emerald-300 shadow">
+                  <span
+                    class="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/90 border border-emerald-500/40 px-3 py-1 text-[10px] font-semibold text-emerald-300 shadow">
                     <span class="h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
                     <span>Live App</span>
                   </span>
@@ -936,31 +1241,44 @@
               <div class="p-6 lg:p-8 w-full md:w-1/2 flex flex-col justify-between">
                 <div>
                   <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
+                    <span
+                      class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
                       <i data-lucide="users" class="w-3 h-3 text-sky-400"></i>3-Role RBAC
                     </span>
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
+                    <span
+                      class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
                       <i data-lucide="credit-card" class="w-3 h-3 text-cyan-400"></i>Stripe Checkout
                     </span>
-                    <span class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
+                    <span
+                      class="inline-flex items-center gap-1.5 rounded-full bg-white/[0.04] border border-white/10 px-3 py-1 text-[10px] font-mono text-slate-300">
                       <i data-lucide="truck" class="w-3 h-3 text-emerald-400"></i>Courier Tracking
                     </span>
                   </div>
-                  <span class="inline-flex rounded-full bg-sky-500/10 border border-sky-500/25 px-2.5 py-0.5 text-[9px] font-mono uppercase tracking-widest text-sky-400 font-semibold">FULL-STACK MARKETPLACE</span>
+                  <span
+                    class="inline-flex rounded-full bg-sky-500/10 border border-sky-500/25 px-2.5 py-0.5 text-[9px] font-mono uppercase tracking-widest text-sky-400 font-semibold">FULL-STACK
+                    MARKETPLACE</span>
                   <h3 class="mt-2.5 text-2xl font-bold tracking-tight">Shelv</h3>
                   <p class="mt-3 text-sm text-slate-400 leading-relaxed">
-                    Full-stack marketplace exclusively focused on buying and selling new and used books. Supports role-based workflows, delivery-address checkout, Stripe card payments & cash-on-delivery, seller inventory & courier tracking dispatch, and buyer review/refund/dispute management.
+                    Full-stack marketplace exclusively focused on buying and selling new and used books. Supports
+                    role-based workflows, delivery-address checkout, Stripe card payments & cash-on-delivery, seller
+                    inventory & courier tracking dispatch, and buyer review/refund/dispute management.
                   </p>
                 </div>
                 <div class="mt-6">
                   <div class="flex flex-wrap gap-1.5 mb-5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">React.js</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Node.js</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Express.js</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">MongoDB</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Stripe</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">React.js</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Node.js</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Express.js</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">MongoDB</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2.5 py-1 text-[11px] font-mono text-slate-300">Stripe</span>
                   </div>
-                  <a href="https://github.com/kathuskanthavarajah/shelv" target="_blank" rel="noreferrer" class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-5 py-2.5 text-xs font-semibold text-white shadow transition">
+                  <a href="https://github.com/kathuskanthavarajah/shelv" target="_blank" rel="noreferrer"
+                    class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-5 py-2.5 text-xs font-semibold text-white shadow transition">
                     <span>Launch Platform</span>
                     <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                   </a>
@@ -981,42 +1299,56 @@
         <div id="projectGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 
           <!-- 1. IBM Stock Forecasting -->
-          <article data-cat="data" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="data"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
               <!-- Top Visual Banner -->
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-cyan-950 via-slate-900 to-blue-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-cyan-300">TIME-SERIES · BIG DATA</span>
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-cyan-300">TIME-SERIES
+                    · BIG DATA</span>
                   <div class="flex items-center gap-1.5">
-                    <button onclick="openProjectModal('ibm')" title="Project Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                    <button onclick="openProjectModal('ibm')" title="Project Details"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                       <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </button>
                   </div>
                 </div>
                 <!-- Animated SVG Stock Forecasting Chart Graphic -->
-                <svg class="w-full h-24 overflow-visible group-hover:scale-105 transition-transform duration-500" viewBox="0 0 300 90" fill="none">
-                  <path d="M0 70 Q 45 55, 85 62 T 165 38 T 240 28 T 300 14" stroke="#38bdf8" stroke-width="2.5" fill="none"/>
+                <svg class="w-full h-24 overflow-visible group-hover:scale-105 transition-transform duration-500"
+                  viewBox="0 0 300 90" fill="none">
+                  <path d="M0 70 Q 45 55, 85 62 T 165 38 T 240 28 T 300 14" stroke="#38bdf8" stroke-width="2.5"
+                    fill="none" />
                   <path d="M180 34 L 300 8 L 300 42 Z" fill="rgba(56,189,248,0.18)" />
                   <circle cx="240" cy="28" r="4" fill="#22d3ee" class="animate-ping" />
                   <circle cx="240" cy="28" r="4" fill="#22d3ee" />
                 </svg>
-                <div class="text-[10px] font-mono text-cyan-300/90 z-10">16,272 Yahoo Finance Rows · 83.33% PI Coverage</div>
+                <div class="text-[10px] font-mono text-cyan-300/90 z-10">16,272 Yahoo Finance Rows · 83.33% PI Coverage
+                </div>
               </div>
               <!-- Bottom Body -->
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">IBM Stock Forecasting Platform</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">IBM Stock Forecasting
+                    Platform</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    Azure Databricks & PySpark time-series pipeline comparing ARIMA(1,1,0), ARIMA(0,1,1), and ARIMA(1,1,1) with uncertainty intervals (MAE: 4.4037).
+                    Azure Databricks & PySpark time-series pipeline comparing ARIMA(1,1,0), ARIMA(0,1,1), and
+                    ARIMA(1,1,1) with uncertainty intervals (MAE: 4.4037).
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Databricks</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">PySpark</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">ARIMA</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Databricks</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">PySpark</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">ARIMA</span>
                   </div>
-                  <button onclick="openProjectModal('ibm')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('ibm')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1025,41 +1357,58 @@
           </article>
 
           <!-- 2. LitPredict NLP -->
-          <article data-cat="ml" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="ml"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-purple-950 via-slate-900 to-indigo-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-purple-950 via-slate-900 to-indigo-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-purple-300">NLP · REGRESSION</span>
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-purple-300">NLP
+                    · REGRESSION</span>
                   <div class="flex items-center gap-1.5">
-                    <a href="https://github.com/kathuskan/mini_nlp_project" target="_blank" title="GitHub" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
+                    <a href="https://github.com/kathuskan/mini_nlp_project" target="_blank" title="GitHub"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
                       <i data-lucide="github" class="w-3.5 h-3.5"></i>
                     </a>
-                    <button onclick="openProjectModal('litpredict')" title="Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                    <button onclick="openProjectModal('litpredict')" title="Details"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                       <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </button>
                   </div>
                 </div>
                 <!-- Visual AI Chat/NLP Bubbles -->
                 <div class="my-auto space-y-2 px-2 group-hover:scale-105 transition-transform duration-500">
-                  <div class="w-3/4 rounded-xl bg-white/10 border border-white/15 px-3 py-1.5 text-[10px] font-mono text-purple-200">TF-IDF + VADER Sentiment Vector</div>
-                  <div class="ml-auto w-2/3 rounded-xl bg-sky-500/20 border border-sky-400/30 px-3 py-1.5 text-[10px] font-mono text-sky-200 text-right">Predicted Rating: ★ 4.28 (0.17 MAE)</div>
+                  <div
+                    class="w-3/4 rounded-xl bg-white/10 border border-white/15 px-3 py-1.5 text-[10px] font-mono text-purple-200">
+                    TF-IDF + VADER Sentiment Vector</div>
+                  <div
+                    class="ml-auto w-2/3 rounded-xl bg-sky-500/20 border border-sky-400/30 px-3 py-1.5 text-[10px] font-mono text-sky-200 text-right">
+                    Predicted Rating: ★ 4.28 (0.17 MAE)</div>
                 </div>
                 <div class="text-[10px] font-mono text-purple-300/90 z-10">4,700+ Book Blurbs Analyzed</div>
               </div>
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">LitPredict: NLP Book Rating Predictor</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">LitPredict: NLP Book
+                    Rating Predictor</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    End-to-end NLP pipeline predicting average ratings across 4,700+ books from marketing blurbs using VADER sentiment, TF-IDF embeddings, and Random Forest.
+                    End-to-end NLP pipeline predicting average ratings across 4,700+ books from marketing blurbs using
+                    VADER sentiment, TF-IDF embeddings, and Random Forest.
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">TF-IDF</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">VADER</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Random Forest</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">TF-IDF</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">VADER</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Random
+                      Forest</span>
                   </div>
-                  <button onclick="openProjectModal('litpredict')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('litpredict')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1068,39 +1417,54 @@
           </article>
 
           <!-- 3. Sri Lanka Automotive Market BI Dashboard -->
-          <article data-cat="data" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="data"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-amber-950/80 via-slate-900 to-blue-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-amber-950/80 via-slate-900 to-blue-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-amber-300">BUSINESS INTELLIGENCE</span>
-                  <button onclick="openProjectModal('powerbi')" title="Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-amber-300">BUSINESS
+                    INTELLIGENCE</span>
+                  <button onclick="openProjectModal('powerbi')" title="Details"
+                    class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                     <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
                 <!-- Animated Bar/Scatter Preview -->
-                <div class="my-auto flex items-end gap-2 h-16 px-4 group-hover:scale-105 transition-transform duration-500">
+                <div
+                  class="my-auto flex items-end gap-2 h-16 px-4 group-hover:scale-105 transition-transform duration-500">
                   <div class="w-1/5 bg-amber-400/80 rounded-t h-full"></div>
                   <div class="w-1/5 bg-sky-400/80 rounded-t h-4/5"></div>
                   <div class="w-1/5 bg-cyan-400/80 rounded-t h-3/5"></div>
                   <div class="w-1/5 bg-blue-500/80 rounded-t h-2/5"></div>
                   <div class="w-1/5 bg-indigo-400/80 rounded-t h-1/3"></div>
                 </div>
-                <div class="text-[10px] font-mono text-amber-300/90 z-10">3-Page Report · >50% Toyota & Suzuki Share</div>
+                <div class="text-[10px] font-mono text-amber-300/90 z-10">3-Page Report · >50% Toyota & Suzuki Share
+                </div>
               </div>
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">SL Automotive Market BI Dashboard</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">SL Automotive Market BI
+                    Dashboard</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    Interactive 3-page Power BI report analyzing ikman.lk & Riyasewana vehicle listings: Market Composition, Depreciation Curves, and Inventory Explorer.
+                    Interactive 3-page Power BI report analyzing ikman.lk & Riyasewana vehicle listings: Market
+                    Composition, Depreciation Curves, and Inventory Explorer.
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Power BI</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">DAX</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Power Query</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Power
+                      BI</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">DAX</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Power
+                      Query</span>
                   </div>
-                  <button onclick="openProjectModal('powerbi')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('powerbi')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1109,26 +1473,35 @@
           </article>
 
           <!-- 4. AutoValue LK -->
-          <article data-cat="ml" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="ml"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-cyan-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-blue-950 via-slate-900 to-cyan-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-sky-300">PREDICTIVE ML · WEB</span>
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-sky-300">PREDICTIVE
+                    ML · WEB</span>
                   <div class="flex items-center gap-1.5">
-                    <a href="https://github.com/kathuskanthavarajah/used_car_valuation_project" target="_blank" title="GitHub" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
+                    <a href="https://github.com/kathuskanthavarajah/used_car_valuation_project" target="_blank"
+                      title="GitHub"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
                       <i data-lucide="github" class="w-3.5 h-3.5"></i>
                     </a>
-                    <button onclick="openProjectModal('autovalue')" title="Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                    <button onclick="openProjectModal('autovalue')" title="Details"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                       <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </button>
                   </div>
                 </div>
-                <div class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
+                <div
+                  class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
                   <div>
                     <div class="text-2xl font-extrabold text-white">84.95%</div>
                     <div class="text-[10px] font-mono text-emerald-400">Within ±20% Band · R² 0.739</div>
                   </div>
-                  <div class="h-12 w-12 rounded-2xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300">
+                  <div
+                    class="h-12 w-12 rounded-2xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300">
                     <i data-lucide="gauge" class="w-6 h-6"></i>
                   </div>
                 </div>
@@ -1136,18 +1509,24 @@
               </div>
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">AutoValue LK — Valuation Engine</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">AutoValue LK —
+                    Valuation Engine</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    Engineered log-mileage and vehicle-age features across 11,750 records and served a tuned Random Forest regression pipeline via FastAPI & React.
+                    Engineered log-mileage and vehicle-age features across 11,750 records and served a tuned Random
+                    Forest regression pipeline via FastAPI & React.
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">FastAPI</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Scikit-learn</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">FastAPI</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Scikit-learn</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React</span>
                   </div>
-                  <button onclick="openProjectModal('autovalue')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('autovalue')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1156,21 +1535,28 @@
           </article>
 
           <!-- 5. Pocket Manager -->
-          <article data-cat="web" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="web"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-emerald-950 via-slate-900 to-teal-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-emerald-300">FULL-STACK FINTECH</span>
-                  <button onclick="openProjectModal('pocket')" title="Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-emerald-300">FULL-STACK
+                    FINTECH</span>
+                  <button onclick="openProjectModal('pocket')" title="Details"
+                    class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                     <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                   </button>
                 </div>
-                <div class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
+                <div
+                  class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
                   <div class="space-y-1">
                     <div class="text-xs font-mono text-emerald-300">+ Income / - Expense Tracking</div>
                     <div class="text-lg font-bold text-white">Real-Time Analytics & CSV</div>
                   </div>
-                  <div class="h-12 w-12 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300">
+                  <div
+                    class="h-12 w-12 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-emerald-300">
                     <i data-lucide="wallet" class="w-6 h-6"></i>
                   </div>
                 </div>
@@ -1178,18 +1564,24 @@
               </div>
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">Pocket Manager — Personal Finance</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">Pocket Manager —
+                    Personal Finance</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    Full-stack finance tracker featuring real-time income/expense/savings visualization, user authentication, CRUD categorization, and CSV export.
+                    Full-stack finance tracker featuring real-time income/expense/savings visualization, user
+                    authentication, CRUD categorization, and CSV export.
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React.js</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Node.js</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">MySQL</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React.js</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Node.js</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">MySQL</span>
                   </div>
-                  <button onclick="openProjectModal('pocket')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('pocket')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1198,26 +1590,34 @@
           </article>
 
           <!-- 6. Shelv -->
-          <article data-cat="web" class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+          <article data-cat="web"
+            class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
             <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
-              <div class="relative h-44 overflow-hidden bg-gradient-to-br from-sky-950 via-slate-900 to-indigo-950 p-4 flex flex-col justify-between">
+              <div
+                class="relative h-44 overflow-hidden bg-gradient-to-br from-sky-950 via-slate-900 to-indigo-950 p-4 flex flex-col justify-between">
                 <div class="flex items-center justify-between z-10">
-                  <span class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-sky-300">MERN MARKETPLACE</span>
+                  <span
+                    class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-sky-300">MERN
+                    MARKETPLACE</span>
                   <div class="flex items-center gap-1.5">
-                    <a href="https://github.com/kathuskanthavarajah/shelv" target="_blank" title="GitHub" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
+                    <a href="https://github.com/kathuskanthavarajah/shelv" target="_blank" title="GitHub"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition">
                       <i data-lucide="github" class="w-3.5 h-3.5"></i>
                     </a>
-                    <button onclick="openProjectModal('shelv')" title="Details" class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
+                    <button onclick="openProjectModal('shelv')" title="Details"
+                      class="h-7 w-7 rounded-full bg-slate-950/75 border border-white/15 flex items-center justify-center text-slate-300 hover:text-sky-400 transition cursor-pointer">
                       <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
                     </button>
                   </div>
                 </div>
-                <div class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
+                <div
+                  class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
                   <div>
                     <div class="text-lg font-bold text-white">Buyer · Seller · Admin</div>
                     <div class="text-[10px] font-mono text-sky-300">Stripe + COD · Courier Dispatch</div>
                   </div>
-                  <div class="h-12 w-12 rounded-2xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300">
+                  <div
+                    class="h-12 w-12 rounded-2xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300">
                     <i data-lucide="shopping-bag" class="w-6 h-6"></i>
                   </div>
                 </div>
@@ -1225,18 +1625,24 @@
               </div>
               <div class="p-5 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">Shelv — Book Marketplace</h3>
+                  <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">Shelv — Book
+                    Marketplace</h3>
                   <p class="mt-2 text-xs text-slate-400 leading-relaxed">
-                    Dedicated platform for buying and selling new and used books with role-based access, Stripe & COD checkout, courier tracking, and dispute management.
+                    Dedicated platform for buying and selling new and used books with role-based access, Stripe & COD
+                    checkout, courier tracking, and dispute management.
                   </p>
                 </div>
                 <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
                   <div class="flex flex-wrap gap-1.5">
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">MongoDB</span>
-                    <span class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Stripe</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">React</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">MongoDB</span>
+                    <span
+                      class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Stripe</span>
                   </div>
-                  <button onclick="openProjectModal('shelv')" class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+                  <button onclick="openProjectModal('shelv')"
+                    class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
                     <span>More</span><i data-lucide="arrow-right" class="w-3 h-3"></i>
                   </button>
                 </div>
@@ -1252,9 +1658,11 @@
     <section id="experience" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">04</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">04</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>Experience & Credentials
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -1265,31 +1673,43 @@
 
         <!-- Certifications Row -->
         <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
             <div>
               <span class="text-[10px] font-mono uppercase tracking-wider text-sky-400">AMD AI Academy</span>
-              <h3 class="mt-2 text-base font-bold">AI Agents 101: Building AI Agents with MCP & Open-Source Inference</h3>
-              <p class="mt-2 text-xs text-slate-400">Model Context Protocol, agent orchestration, and open-source LLM inference.</p>
+              <h3 class="mt-2 text-base font-bold">AI Agents 101: Building AI Agents with MCP & Open-Source Inference
+              </h3>
+              <p class="mt-2 text-xs text-slate-400">Model Context Protocol, agent orchestration, and open-source LLM
+                inference.</p>
             </div>
-            <a href="https://academy.amd.com/certs/31042/157CE4AB9E9D426BB7BDE9C315DDB482166281.pdf" target="_blank" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline">View Certificate ↗</a>
+            <a href="https://academy.amd.com/certs/31042/157CE4AB9E9D426BB7BDE9C315DDB482166281.pdf" target="_blank"
+              class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline">View
+              Certificate ↗</a>
           </div>
 
-          <div class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
             <div>
               <span class="text-[10px] font-mono uppercase tracking-wider text-cyan-400">Databricks Academy</span>
               <h3 class="mt-2 text-base font-bold">Get Started with Databricks for Data Engineering</h3>
-              <p class="mt-2 text-xs text-slate-400">Lakehouse architecture, PySpark data processing, and distributed pipelines.</p>
+              <p class="mt-2 text-xs text-slate-400">Lakehouse architecture, PySpark data processing, and distributed
+                pipelines.</p>
             </div>
-            <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-emerald-400">Verified Credential ✓</span>
+            <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-emerald-400">Verified Credential
+              ✓</span>
           </div>
 
-          <div class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
+          <div
+            class="tilt-card rounded-3xl glass-strong p-6 flex flex-col justify-between hover:ring-electric transition reveal">
             <div>
               <span class="text-[10px] font-mono uppercase tracking-wider text-blue-400">Coursera</span>
               <h3 class="mt-2 text-base font-bold">Foundations of Business Intelligence & Data Analytics</h3>
-              <p class="mt-2 text-xs text-slate-400">BI pipelines, KPI modeling, stakeholder dashboards, and XGBoost clinical detection.</p>
+              <p class="mt-2 text-xs text-slate-400">BI pipelines, KPI modeling, stakeholder dashboards, and XGBoost
+                clinical detection.</p>
             </div>
-            <a href="https://coursera.org/share/84088f968c1c682bffb662e737ae9dec" target="_blank" class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline">View Certificate ↗</a>
+            <a href="https://coursera.org/share/84088f968c1c682bffb662e737ae9dec" target="_blank"
+              class="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-sky-400 hover:underline">View
+              Certificate ↗</a>
           </div>
         </div>
 
@@ -1308,7 +1728,8 @@
           <div class="tilt-card rounded-3xl glass-strong p-6 reveal">
             <div class="font-mono text-xs text-sky-400">Leadership & Clubs</div>
             <h3 class="mt-2 text-lg font-bold">Media Coordinator & Active Member</h3>
-            <p class="text-xs text-slate-400 mt-0.5">Uthayatharagai SC · Zero Plastic · Leo · Rotaract · AWS Student builder community</p>
+            <p class="text-xs text-slate-400 mt-0.5">Uthayatharagai SC · Zero Plastic · Leo · Rotaract · AWS Student
+              builder community</p>
             <ul class="mt-4 space-y-2 text-sm text-slate-400">
               <li>• Coordinated media coverage, digital content creation, and social outreach initiatives.</li>
               <li>• Former School Prefect at Paddiruppu National School, Kaluwanchikudy.</li>
@@ -1322,9 +1743,11 @@
     <section id="references" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">05</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">05</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>References
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -1357,9 +1780,11 @@
     <section id="contact" class="relative py-16 md:py-24 overflow-hidden">
       <div class="mx-auto max-w-7xl px-6">
         <div class="relative max-w-3xl reveal">
-          <span aria-hidden="true" class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">06</span>
+          <span aria-hidden="true"
+            class="pointer-events-none select-none absolute -top-10 left-0 font-display text-8xl md:text-9xl font-black tracking-tighter text-slate-900/[0.05] dark:text-white/[0.05] leading-none">06</span>
           <div class="relative z-10">
-            <div class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-3.5 py-1 text-[10px] font-mono uppercase tracking-[0.25em] text-sky-400">
               <span class="h-1.5 w-1.5 rounded-full bg-sky-400 animate-ping"></span>Contact
             </div>
             <h2 class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -1372,21 +1797,34 @@
           <!-- Left Column: Intro + Social Icons + Dark Map Card with Live Sri Lanka Clock -->
           <div class="space-y-6 reveal">
             <p class="text-slate-400 max-w-md text-sm sm:text-base leading-relaxed">
-              Whether it's a Data Science / AI internship, an ML pipeline, or a full-stack web product — I'm open to internship roles, research collaborations, and engineering opportunities.
+              Whether it's a Data Science / AI internship, an ML pipeline, or a full-stack web product — I'm open to
+              internship roles, research collaborations, and engineering opportunities.
             </p>
 
             <!-- 4 Circular Social Icons (Matches Screenshot 4) -->
             <div class="flex items-center gap-3">
-              <a href="https://github.com/Kathuskan" target="_blank" rel="noreferrer" class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <a href="https://github.com/Kathuskan" target="_blank" rel="noreferrer"
+                class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
               </a>
-              <a href="https://www.linkedin.com/in/kathuskan-thavarajah/" target="_blank" rel="noreferrer" class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/kathuskan-thavarajah/" target="_blank" rel="noreferrer"
+                class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
               </a>
-              <a href="tel:+94758114531" class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+              <a href="tel:+94758114531"
+                class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
                 <i data-lucide="phone" class="w-4 h-4"></i>
               </a>
-              <a href="mailto:TKathuskan@gmail.com" class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
+              <a href="mailto:TKathuskan@gmail.com"
+                class="magnetic flex h-10 w-10 items-center justify-center rounded-full glass-strong text-slate-300 hover:text-white hover:border-sky-500/50 transition">
                 <i data-lucide="mail" class="w-4 h-4"></i>
               </a>
             </div>
@@ -1406,8 +1844,7 @@
 
               <!-- Styled Dark Map Container -->
               <div class="relative h-44 w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0d1526]">
-                <iframe
-                  title="Sabaragamuwa University of Sri Lanka Map"
+                <iframe title="Sabaragamuwa University of Sri Lanka Map"
                   src="https://www.openstreetmap.org/export/embed.html?bbox=80.7650%2C6.7000%2C80.8050%2C6.7300&amp;layer=mapnik"
                   class="w-full h-full border-0 opacity-65 contrast-125 invert hue-rotate-180 saturate-50"
                   loading="lazy">
@@ -1416,13 +1853,16 @@
                 <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
                   <div class="relative flex items-center justify-center">
                     <span class="absolute h-10 w-10 rounded-full bg-rose-500/30 animate-ping"></span>
-                    <span class="relative flex h-7 w-7 items-center justify-center rounded-full bg-rose-500 text-white shadow-lg ring-2 ring-white/80">
+                    <span
+                      class="relative flex h-7 w-7 items-center justify-center rounded-full bg-rose-500 text-white shadow-lg ring-2 ring-white/80">
                       <i data-lucide="map-pin" class="w-4 h-4"></i>
                     </span>
                   </div>
                 </div>
                 <!-- Top-Left "Maps ↗" Pill -->
-                <a href="https://maps.google.com/?q=Sabaragamuwa+University+of+Sri+Lanka" target="_blank" rel="noreferrer" class="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 px-3 py-1.5 text-xs font-semibold text-white hover:border-sky-400 transition">
+                <a href="https://maps.google.com/?q=Sabaragamuwa+University+of+Sri+Lanka" target="_blank"
+                  rel="noreferrer"
+                  class="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/15 px-3 py-1.5 text-xs font-semibold text-white hover:border-sky-400 transition">
                   <span>Maps</span>
                   <i data-lucide="external-link" class="w-3 h-3 text-sky-400"></i>
                 </a>
@@ -1433,10 +1873,11 @@
           <!-- Right Column: Contact Form with ROLLING FLOWERS on Top-Left & Bottom-Right Corners (Matches Screenshot 4) -->
           <div class="relative group reveal">
             <!-- Top-Left Rolling Cyan Flower Cluster -->
-            <svg class="pointer-events-none absolute -left-6 -top-6 z-20 w-16 h-16 overflow-visible" viewBox="0 0 80 80" fill="none">
+            <svg class="pointer-events-none absolute -left-6 -top-6 z-20 w-16 h-16 overflow-visible" viewBox="0 0 80 80"
+              fill="none">
               <g class="animate-leaf-sway">
-                <path d="M42 22 C46 8, 58 6, 62 16 C56 24, 48 26, 42 22 Z" fill="url(#flowerPetalBlue)" opacity="0.9"/>
-                <path d="M22 44 C8 46, 6 58, 16 62 C24 56, 26 48, 22 44 Z" fill="url(#flowerPetalBlue)" opacity="0.9"/>
+                <path d="M42 22 C46 8, 58 6, 62 16 C56 24, 48 26, 42 22 Z" fill="url(#flowerPetalBlue)" opacity="0.9" />
+                <path d="M22 44 C8 46, 6 58, 16 62 C24 56, 26 48, 22 44 Z" fill="url(#flowerPetalBlue)" opacity="0.9" />
               </g>
               <g class="animate-flower-roll">
                 <ellipse cx="32" cy="18" rx="6" ry="12" fill="url(#flowerPetalCyan)" />
@@ -1449,10 +1890,13 @@
             </svg>
 
             <!-- Bottom-Right Rolling Cyan Flower Cluster -->
-            <svg class="pointer-events-none absolute -right-6 -bottom-6 z-20 w-16 h-16 overflow-visible" viewBox="0 0 80 80" fill="none">
+            <svg class="pointer-events-none absolute -right-6 -bottom-6 z-20 w-16 h-16 overflow-visible"
+              viewBox="0 0 80 80" fill="none">
               <g class="animate-leaf-sway">
-                <path d="M38 58 C34 72, 22 74, 18 64 C24 56, 32 54, 38 58 Z" fill="url(#flowerPetalBlue)" opacity="0.9"/>
-                <path d="M58 36 C72 34, 74 22, 64 18 C56 24, 54 32, 58 36 Z" fill="url(#flowerPetalBlue)" opacity="0.9"/>
+                <path d="M38 58 C34 72, 22 74, 18 64 C24 56, 32 54, 38 58 Z" fill="url(#flowerPetalBlue)"
+                  opacity="0.9" />
+                <path d="M58 36 C72 34, 74 22, 64 18 C56 24, 54 32, 58 36 Z" fill="url(#flowerPetalBlue)"
+                  opacity="0.9" />
               </g>
               <g class="animate-flower-reverse">
                 <ellipse cx="48" cy="34" rx="6" ry="12" fill="url(#flowerPetalCyan)" />
@@ -1464,40 +1908,106 @@
               </g>
             </svg>
 
-            <form onsubmit="sendMail(event)" class="tilt-card relative z-10 rounded-3xl glass-strong p-6 md:p-8 space-y-5 shadow-elegant border border-white/10">
+            <form onsubmit="sendMail(event)"
+              class="tilt-card relative z-10 rounded-3xl glass-strong p-6 md:p-8 space-y-5 shadow-elegant border border-white/10">
               <div class="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label class="mb-1.5 block text-xs font-medium text-slate-400">Name</label>
-                  <input id="cName" required placeholder="Jane Doe" class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition" />
+                  <input id="cName" required placeholder="Jane Doe"
+                    class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition" />
                 </div>
                 <div>
                   <label class="mb-1.5 block text-xs font-medium text-slate-400">Email</label>
-                  <input id="cEmail" type="email" required placeholder="jane@studio.com" class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition" />
+                  <input id="cEmail" type="email" required placeholder="jane@studio.com"
+                    class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition" />
                 </div>
               </div>
               <div>
                 <label class="mb-1.5 block text-xs font-medium text-slate-400">Message</label>
-                <textarea id="cMsg" rows="4" required placeholder="Tell me about your project or internship opportunity..." class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition"></textarea>
+                <textarea id="cMsg" rows="4" required
+                  placeholder="Tell me about your project or internship opportunity..."
+                  class="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm outline-none focus:border-sky-500 transition"></textarea>
               </div>
-              <button type="submit" class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-elegant transition cursor-pointer">
+              <button type="submit"
+                class="magnetic inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-elegant transition cursor-pointer">
                 <span>Send Message</span>
                 <i data-lucide="send" class="w-4 h-4"></i>
               </button>
-              <p class="text-[11px] text-slate-500">By submitting this form, you agree to be contacted at the email address provided.</p>
+              <p class="text-[11px] text-slate-500">By submitting this form, you agree to be contacted at the email
+                address provided.</p>
             </form>
           </div>
         </div>
       </div>
     </section>
+    <!-- 7. VoxFolio MCP: Agentic Voice & RAG Portfolio Assistant -->
+    <article data-cat="ml"
+      class="tilt-card project-item group rounded-3xl glass-strong p-1.5 shadow-elegant flex flex-col justify-between hover:ring-electric transition-all duration-300 reveal">
+      <div class="rounded-[1.35rem] overflow-hidden flex flex-col h-full justify-between bg-[#0a0f1d]/90">
+        <div
+          class="relative h-44 overflow-hidden bg-gradient-to-br from-sky-950 via-slate-900 to-blue-950 p-4 flex flex-col justify-between">
+          <div class="flex items-center justify-between z-10">
+            <span
+              class="rounded-full bg-slate-950/75 backdrop-blur-md border border-white/15 px-3 py-1 text-[9px] font-mono uppercase tracking-wider text-sky-300">AI
+              AGENT · VOICE RAG</span>
+            <button onclick="startVoiceAgent()" title="Test Live Voice Agent"
+              class="h-7 w-7 rounded-full bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300 hover:bg-sky-500/40 transition cursor-pointer">
+              <i data-lucide="mic" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+          <div
+            class="my-auto flex items-center justify-between px-2 group-hover:scale-105 transition-transform duration-500">
+            <div>
+              <div class="text-lg font-extrabold text-white">TF-IDF + Tool Calling</div>
+              <div class="text-[10px] font-mono text-emerald-400">DOM Action Execution · Neural TTS</div>
+            </div>
+            <div
+              class="h-12 w-12 rounded-2xl bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-300">
+              <i data-lucide="bot" class="w-6 h-6"></i>
+            </div>
+          </div>
+          <div class="text-[10px] font-mono text-sky-300/90 z-10">Live on This Site · Sub-150ms Retrieval</div>
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-base font-bold text-white group-hover:text-sky-400 transition">VoxFolio: Agentic Voice & RAG
+              Assistant</h3>
+            <p class="mt-2 text-xs text-slate-400 leading-relaxed">
+              Interactive voice agent combining Scikit-learn TF-IDF cosine retrieval, FastAPI, neural Edge-TTS, and
+              structured DOM tool-calling to navigate this portfolio hands-free.
+            </p>
+          </div>
+          <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between gap-2 flex-wrap">
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">FastAPI</span>
+              <span
+                class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">TF-IDF
+                RAG</span>
+              <span
+                class="rounded-md bg-white/[0.04] border border-white/10 px-2 py-0.5 text-[10px] font-mono text-slate-300">Web
+                Speech</span>
+            </div>
+            <button onclick="startVoiceAgent()"
+              class="text-xs font-semibold text-sky-400 hover:text-sky-300 inline-flex items-center gap-1 cursor-pointer">
+              <span>Try Live</span><i data-lucide="sparkles" class="w-3 h-3"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
   </main>
 
   <!-- Footer -->
   <footer class="relative border-t border-white/10 py-14 overflow-hidden">
     <div class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-[25%] -z-10 flex justify-center">
-      <span class="text-[22vw] font-cursive text-slate-900/[0.04] dark:text-white/[0.03] select-none leading-none">Kathuskan</span>
+      <span
+        class="text-[22vw] font-cursive text-slate-900/[0.04] dark:text-white/[0.03] select-none leading-none">Kathuskan</span>
     </div>
-    <div class="mx-auto max-w-7xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-      <div>© 2026 <span class="running-blue-white font-semibold">Kathuskan Thavarajah</span> — Data Science Portfolio.</div>
+    <div
+      class="mx-auto max-w-7xl px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div>© 2026 <span class="running-blue-white font-semibold">Kathuskan Thavarajah</span> — Data Science Portfolio.
+      </div>
       <div class="font-mono flex items-center gap-2">
         <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
         <span>Sabaragamuwa University of Sri Lanka</span>
@@ -1506,26 +2016,36 @@
   </footer>
 
   <!-- PROJECT ARCHITECTURE MODAL ("More ->") -->
-  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
+  <div id="projectModal"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
     <div class="relative w-full max-w-lg rounded-3xl glass-strong p-6 sm:p-8 border border-sky-500/30 shadow-elegant">
-      <button onclick="closeProjectModal()" class="absolute top-5 right-5 h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white cursor-pointer">
+      <button onclick="closeProjectModal()"
+        class="absolute top-5 right-5 h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white cursor-pointer">
         <i data-lucide="x" class="w-4 h-4"></i>
       </button>
-      <span id="modalTag" class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[10px] font-mono uppercase text-sky-400">PROJECT DETAILS</span>
+      <span id="modalTag"
+        class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[10px] font-mono uppercase text-sky-400">PROJECT
+        DETAILS</span>
       <h3 id="modalTitle" class="mt-3 text-2xl font-bold text-white"></h3>
       <p id="modalDesc" class="mt-3 text-sm text-slate-300 leading-relaxed"></p>
-      <div id="modalMetrics" class="mt-4 rounded-2xl bg-white/[0.04] border border-white/10 p-4 text-xs font-mono text-sky-300"></div>
+      <div id="modalMetrics"
+        class="mt-4 rounded-2xl bg-white/[0.04] border border-white/10 p-4 text-xs font-mono text-sky-300"></div>
       <div class="mt-6 flex justify-end gap-3">
-        <button onclick="closeProjectModal()" class="rounded-full px-4 py-2 text-xs font-semibold glass-strong hover:border-sky-400 cursor-pointer">Close</button>
-        <a id="modalLink" href="#" target="_blank" class="rounded-full gradient-electric px-5 py-2 text-xs font-semibold text-white">View on GitHub ↗</a>
+        <button onclick="closeProjectModal()"
+          class="rounded-full px-4 py-2 text-xs font-semibold glass-strong hover:border-sky-400 cursor-pointer">Close</button>
+        <a id="modalLink" href="#" target="_blank"
+          class="rounded-full gradient-electric px-5 py-2 text-xs font-semibold text-white">View on GitHub ↗</a>
       </div>
     </div>
   </div>
 
   <!-- FIXED BOTTOM-LEFT LIKE BUTTON WITH HEART BURST -->
-  <button id="likeBtn" onclick="incrementLikes(event)" class="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2 rounded-full bg-[#1a1118]/90 backdrop-blur-xl border border-rose-500/30 px-4 py-2 text-xs font-bold text-rose-400 shadow-elegant hover:scale-105 active:scale-95 transition cursor-pointer">
-    <svg class="w-4 h-4 fill-rose-500 text-rose-500 transition-transform duration-300" id="likeHeartIcon" viewBox="0 0 24 24">
-      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  <button id="likeBtn" onclick="incrementLikes(event)"
+    class="fixed bottom-5 left-5 z-40 inline-flex items-center gap-2 rounded-full bg-[#1a1118]/90 backdrop-blur-xl border border-rose-500/30 px-4 py-2 text-xs font-bold text-rose-400 shadow-elegant hover:scale-105 active:scale-95 transition cursor-pointer">
+    <svg class="w-4 h-4 fill-rose-500 text-rose-500 transition-transform duration-300" id="likeHeartIcon"
+      viewBox="0 0 24 24">
+      <path
+        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
     </svg>
     <span id="likeCount">79</span>
   </button>
@@ -1533,42 +2053,93 @@
   <!-- FIXED BOTTOM-RIGHT "Hi / I'm" + ROBOT CHAT WIDGET -->
   <div class="fixed bottom-5 right-5 z-40 flex items-center">
     <button onclick="toggleAssistant()" class="group relative flex items-center cursor-pointer">
-      <span id="botGreetingPill" class="rounded-l-full bg-white text-slate-900 font-semibold text-xs pl-4 pr-5 py-2 shadow-elegant border border-white/20 transition-all">
+      <span id="botGreetingPill"
+        class="rounded-l-full bg-white text-slate-900 font-semibold text-xs pl-4 pr-5 py-2 shadow-elegant border border-white/20 transition-all">
         Hi
       </span>
-      <span class="-ml-3 flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 text-white shadow-[0_0_25px_rgba(14,165,233,0.65)] ring-2 ring-white/80 group-hover:scale-110 transition">
+      <span
+        class="-ml-3 flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 text-white shadow-[0_0_25px_rgba(14,165,233,0.65)] ring-2 ring-white/80 group-hover:scale-110 transition">
         <i data-lucide="bot" class="w-5 h-5"></i>
       </span>
     </button>
   </div>
 
-  <!-- Interactive AI Portfolio Assistant Modal -->
-  <div id="aiDrawer" class="hidden fixed bottom-20 right-5 z-50 w-80 sm:w-96 rounded-3xl glass-strong p-5 shadow-elegant border border-sky-500/30">
+  <!-- Interactive AI Portfolio Voice & Action Assistant Modal -->
+  <div id="aiDrawer"
+    class="hidden fixed bottom-20 right-5 z-50 w-80 sm:w-96 rounded-3xl glass-strong p-5 shadow-elegant border border-sky-500/30">
     <div class="flex items-center justify-between pb-3 border-b border-white/10">
       <div class="flex items-center gap-2.5">
-        <span class="flex h-8 w-8 items-center justify-center rounded-full gradient-electric text-white">
+        <span class="relative flex h-8 w-8 items-center justify-center rounded-full gradient-electric text-white">
           <i data-lucide="bot" class="w-4 h-4"></i>
+          <span id="voicePulseRing"
+            class="hidden absolute inset-0 rounded-full border-2 border-sky-400 animate-ping"></span>
         </span>
         <div>
-          <div class="text-xs font-bold text-white"><span class="running-blue-white">Kathuskan's</span> AI Assistant</div>
-          <div class="text-[10px] text-emerald-400 font-mono">● Online · Ask about my work</div>
+          <div class="text-xs font-bold text-white"><span class="running-blue-white">Kathuskan's</span> Voice Agent
+          </div>
+          <div id="aiStatusText" class="text-[10px] text-emerald-400 font-mono">● Online · Voice & DOM Control</div>
         </div>
       </div>
-      <button onclick="toggleAssistant()" class="text-slate-400 hover:text-white cursor-pointer">
-        <i data-lucide="x" class="w-4 h-4"></i>
-      </button>
-    </div>
-    <div id="aiChatBox" class="my-3 max-h-56 overflow-y-auto space-y-2.5 text-xs text-slate-300">
-      <div class="rounded-2xl bg-white/5 p-3">
-        👋 Hi! I'm Kathuskan's portfolio assistant. Tap a question below to learn about his Data Science & Full-Stack work:
+      <div class="flex items-center gap-2">
+        <button id="ttsToggleBtn" onclick="toggleTTS()" title="Toggle Voice Output"
+          class="h-7 w-7 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-sky-400 hover:text-white cursor-pointer">
+          <i data-lucide="volume-2" class="w-3.5 h-3.5"></i>
+        </button>
+        <button onclick="toggleAssistant()" class="text-slate-400 hover:text-white cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
       </div>
     </div>
-    <div class="flex flex-wrap gap-1.5">
-      <button onclick="askAI('autovalue')" class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[11px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">AutoValue LK?</button>
-      <button onclick="askAI('shelv')" class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[11px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">Shelv Book App?</button>
-      <button onclick="askAI('stack')" class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[11px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">Core Tech Stack?</button>
-      <button onclick="askAI('intern')" class="rounded-full bg-sky-500/15 border border-sky-500/30 px-3 py-1 text-[11px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">Internship Availability?</button>
+
+    <!-- Animated Audio Waveform Bar -->
+    <div id="voiceWaveform"
+      class="hidden my-2.5 flex items-center justify-center gap-1 h-6 rounded-xl bg-sky-500/10 border border-sky-500/20 px-3">
+      <span class="w-1 h-2 bg-sky-400 rounded-full animate-pulse"></span>
+      <span class="w-1 h-4 bg-cyan-400 rounded-full animate-pulse" style="animation-delay: 0.1s"></span>
+      <span class="w-1 h-3 bg-blue-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></span>
+      <span class="w-1 h-5 bg-sky-400 rounded-full animate-pulse" style="animation-delay: 0.3s"></span>
+      <span class="w-1 h-2.5 bg-cyan-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></span>
+      <span id="voiceWaveLabel" class="ml-2 text-[10px] font-mono text-sky-300">Listening...</span>
     </div>
+
+    <!-- Chat History -->
+    <div id="aiChatBox" class="my-3 max-h-60 overflow-y-auto space-y-2.5 text-xs text-slate-300 pr-1">
+      <div class="rounded-2xl bg-white/5 border border-white/10 p-3">
+        👋 Hi! I'm Kathuskan's AI Voice Agent. Click the <b>mic</b> and say:<br />
+        <span class="text-[11px] font-mono text-sky-300">"Tell me about AutoValue LK"</span> or <span
+          class="text-[11px] font-mono text-sky-300">"Download his CV"</span>.
+      </div>
+    </div>
+
+    <!-- Quick Prompt Pills -->
+    <div class="flex flex-wrap gap-1.5 mb-3">
+      <button onclick="handleUserQuery('Tell me about AutoValue LK')"
+        class="rounded-full bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 text-[10px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">🚗
+        AutoValue LK</button>
+      <button onclick="handleUserQuery('Show me the IBM Stock project')"
+        class="rounded-full bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 text-[10px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">📈
+        IBM PySpark</button>
+      <button onclick="handleUserQuery('What is his tech stack?')"
+        class="rounded-full bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 text-[10px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">⚡
+        Tech Stack</button>
+      <button onclick="handleUserQuery('Download his CV')"
+        class="rounded-full bg-sky-500/15 border border-sky-500/30 px-2.5 py-1 text-[10px] text-sky-300 hover:bg-sky-500/25 cursor-pointer">📄
+        Download CV</button>
+    </div>
+
+    <!-- Voice & Text Input Bar -->
+    <form onsubmit="submitTextQuery(event)" class="flex items-center gap-2">
+      <button type="button" id="micBtn" onclick="toggleVoiceRecognition()" title="Speak to Agent"
+        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 text-white shadow hover:scale-105 transition cursor-pointer">
+        <i data-lucide="mic" class="w-4 h-4"></i>
+      </button>
+      <input id="aiUserInput" type="text" placeholder="Ask or command (e.g. 'Open Shelv')..."
+        class="w-full rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-2 text-xs text-white outline-none focus:border-sky-500 transition" />
+      <button type="submit"
+        class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 hover:bg-sky-500 text-white transition cursor-pointer">
+        <i data-lucide="send" class="w-3.5 h-3.5"></i>
+      </button>
+    </form>
   </div>
 
   <script>
@@ -1806,23 +2377,229 @@
       document.getElementById('projectModal').classList.add('hidden');
     }
 
-    // 13. AI Assistant Drawer
-    function toggleAssistant() {
-      document.getElementById('aiDrawer').classList.toggle('hidden');
-    }
-    function askAI(topic) {
-      const box = document.getElementById('aiChatBox');
-      const answers = {
-        autovalue: "🚗 AutoValue LK trained on 11,750 cleaned Sri Lankan vehicle listings using a tuned Random Forest regression pipeline (R² = 0.739, 84.95% within ±20%) served via FastAPI & React.",
-        shelv: "📚 Shelv is a MERN-stack e-commerce marketplace focused exclusively on buying and selling new and used books, featuring Stripe & COD checkout, courier tracking, and buyer/seller/admin roles.",
-        stack: "⚡ Python, SQL, R, Scikit-learn, XGBoost, PySpark, Databricks, Power BI, FastAPI, React.js, Node.js, MongoDB, and MySQL.",
-        intern: "🎯 Kathuskan is a BSc (Hons) Data Science undergraduate at Sabaragamuwa University of Sri Lanka actively available for Data Science, AI/ML, and Full-Stack Software Engineering internships."
+
+    // 13. Hybrid FastAPI RAG + Browser Voice Agent
+    const BACKEND_URL = "http://localhost:8000/api/ask"; // Change to your Hugging Face Space URL after Step 4
+    let ttsEnabled = true;
+    let isListening = false;
+    let recognition = null;
+    let activeAudio = null;
+
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onstart = () => {
+        isListening = true;
+        document.getElementById('voiceWaveform').classList.remove('hidden');
+        document.getElementById('voiceWaveLabel').textContent = 'Listening... Speak now';
+        document.getElementById('voicePulseRing').classList.remove('hidden');
+        document.getElementById('aiStatusText').textContent = '● Listening...';
       };
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        document.getElementById('aiUserInput').value = transcript;
+        handleUserQuery(transcript);
+      };
+
+      recognition.onerror = () => stopListeningUI();
+      recognition.onend = () => stopListeningUI();
+    }
+
+    function stopListeningUI() {
+      isListening = false;
+      document.getElementById('voiceWaveform').classList.add('hidden');
+      document.getElementById('voicePulseRing').classList.add('hidden');
+      document.getElementById('aiStatusText').textContent = '● Online · Voice & DOM Control';
+    }
+
+    function stopAllAudio() {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio = null;
+      }
+    }
+
+    function toggleAssistant() {
+      const drawer = document.getElementById('aiDrawer');
+      drawer.classList.toggle('hidden');
+      if (drawer.classList.contains('hidden')) stopAllAudio();
+    }
+
+    function startVoiceAgent() {
+      const drawer = document.getElementById('aiDrawer');
+      if (drawer.classList.contains('hidden')) drawer.classList.remove('hidden');
+      toggleVoiceRecognition();
+    }
+
+    function toggleVoiceRecognition() {
+      if (!recognition) {
+        appendMessage('bot', '⚠️ Voice input works best in Chrome or Edge. You can also type your command below!');
+        return;
+      }
+      if (isListening) {
+        recognition.stop();
+      } else {
+        stopAllAudio();
+        recognition.start();
+      }
+    }
+
+    function toggleTTS() {
+      ttsEnabled = !ttsEnabled;
+      const btn = document.getElementById('ttsToggleBtn');
+      btn.className = ttsEnabled
+        ? 'h-7 w-7 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-sky-400 hover:text-white cursor-pointer'
+        : 'h-7 w-7 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-500 hover:text-white cursor-pointer';
+      if (!ttsEnabled) stopAllAudio();
+    }
+
+    function speakBrowserTTS(text) {
+      if (!ttsEnabled || !('speechSynthesis' in window)) return;
+      stopAllAudio();
+      const cleanText = text.replace(/<[^>]*>?/gm, '').replace(/[^\w\s.,?!-]/g, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.rate = 1.05;
+      utterance.onstart = () => {
+        document.getElementById('voiceWaveform').classList.remove('hidden');
+        document.getElementById('voiceWaveLabel').textContent = 'Speaking...';
+      };
+      utterance.onend = () => {
+        if (!isListening) document.getElementById('voiceWaveform').classList.add('hidden');
+      };
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function submitTextQuery(e) {
+      e.preventDefault();
+      const input = document.getElementById('aiUserInput');
+      const query = input.value.trim();
+      if (!query) return;
+      input.value = '';
+      handleUserQuery(query);
+    }
+
+    function appendMessage(sender, html) {
+      const box = document.getElementById('aiChatBox');
       const div = document.createElement('div');
-      div.className = "rounded-2xl bg-sky-500/15 border border-sky-500/30 p-3 text-sky-100";
-      div.textContent = answers[topic];
+      if (sender === 'user') {
+        div.className = 'ml-auto max-w-[85%] rounded-2xl bg-blue-600/30 border border-blue-500/40 px-3 py-2 text-right text-white';
+        div.textContent = `🎙️ "${html}"`;
+      } else {
+        div.className = 'rounded-2xl bg-sky-500/15 border border-sky-500/30 p-3 text-sky-100 leading-relaxed';
+        div.innerHTML = html;
+      }
       box.appendChild(div);
       box.scrollTop = box.scrollHeight;
+    }
+
+    function executeDOMTool(action, target) {
+      if (action === "OPEN_MODAL" && target) {
+        document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => openProjectModal(target), 550);
+      } else if (action === "SCROLL" && target) {
+        const el = document.getElementById(target);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } else if (action === "DOWNLOAD_CV") {
+        incrementDownloads();
+        const link = document.createElement('a');
+        link.href = target || 'Kathuskan_Thavarajah_CV.pdf';
+        link.download = 'Kathuskan_Thavarajah_CV.pdf';
+        link.click();
+      }
+    }
+
+    async function handleUserQuery(rawQuery) {
+      appendMessage('user', rawQuery);
+      document.getElementById('aiStatusText').textContent = '● Retrieving via TF-IDF RAG...';
+
+      try {
+        const res = await fetch(BACKEND_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: rawQuery, include_audio: ttsEnabled })
+        });
+        if (!res.ok) throw new Error("Backend unreachable");
+        const data = await res.json();
+
+        const htmlReply = `
+      <div>${data.reply}</div>
+      <div class="mt-2 pt-1.5 border-t border-white/10 flex flex-wrap items-center justify-between gap-1 text-[9px] font-mono text-sky-300/80">
+        <span>📄 ${data.telemetry.source} (sim: ${data.telemetry.tfidf_score})</span>
+        <span>⚡ ${data.telemetry.latency_ms}ms · ${data.ui_tool_call.action}</span>
+      </div>
+    `;
+        appendMessage('bot', htmlReply);
+
+        if (ttsEnabled && data.audio_base64) {
+          stopAllAudio();
+          activeAudio = new Audio("data:audio/mp3;base64," + data.audio_base64);
+          document.getElementById('voiceWaveform').classList.remove('hidden');
+          document.getElementById('voiceWaveLabel').textContent = 'Speaking (Neural Edge-TTS)...';
+          activeAudio.onended = () => document.getElementById('voiceWaveform').classList.add('hidden');
+          activeAudio.play();
+        } else {
+          speakBrowserTTS(data.reply);
+        }
+
+        executeDOMTool(data.ui_tool_call.action, data.ui_tool_call.target);
+        document.getElementById('aiStatusText').textContent = '● Online · Voice & DOM Control';
+      } catch (err) {
+        // Offline Fallback if Backend is sleeping
+        runOfflineFallbackAgent(rawQuery);
+        document.getElementById('aiStatusText').textContent = '● Online (Local Mode)';
+      }
+    }
+
+    function runOfflineFallbackAgent(rawQuery) {
+      const q = rawQuery.toLowerCase();
+      let reply = "🤖 I can tell you about Kathuskan's projects (<b>AutoValue LK, Shelv, LitPredict, IBM Stock Forecasting, Power BI</b>), his <b>tech stack</b>, or <b>download his CV</b>.";
+      let action = "NONE", target = "";
+
+      if (q.includes('autovalue') || q.includes('car') || q.includes('vehicle')) {
+        reply = "🚗 <b>AutoValue LK</b> estimates Sri Lankan vehicle prices across 11,750 records using a Random Forest pipeline served via FastAPI & React (R² = 0.739, 84.95% within ±20%).";
+        action = "OPEN_MODAL"; target = "autovalue";
+      } else if (q.includes('shelv') || q.includes('book')) {
+        reply = "📚 <b>Shelv</b> is a full-stack MERN book marketplace supporting Buyer, Seller, and Admin roles, Stripe + COD checkout, and courier tracking.";
+        action = "OPEN_MODAL"; target = "shelv";
+      } else if (q.includes('ibm') || q.includes('stock') || q.includes('pyspark')) {
+        reply = "📈 The <b>IBM Stock Forecasting Platform</b> uses Azure Databricks & PySpark over 16,272 Yahoo Finance rows to evaluate ARIMA models (MAE: 4.4037).";
+        action = "OPEN_MODAL"; target = "ibm";
+      } else if (q.includes('litpredict') || q.includes('nlp')) {
+        reply = "🧠 <b>LitPredict</b> predicts book ratings across 4,700+ blurbs using VADER sentiment, TF-IDF embeddings, and Random Forest (0.17 MAE).";
+        action = "OPEN_MODAL"; target = "litpredict";
+      } else if (q.includes('skill') || q.includes('stack')) {
+        reply = "⚡ Kathuskan's stack includes Python, SQL, R, Scikit-learn, XGBoost, PySpark, Databricks, Power BI, FastAPI, React, Node.js, and MongoDB.";
+        action = "SCROLL"; target = "skills";
+      } else if (q.includes('cv') || q.includes('resume') || q.includes('download')) {
+        reply = "📄 Downloading Kathuskan's CV PDF now!";
+        action = "DOWNLOAD_CV"; target = "Kathuskan_Thavarajah_CV.pdf";
+      } else if (q.includes('intern') || q.includes('contact') || q.includes('hire')) {
+        reply = "🎯 Kathuskan is actively available for Data Science, AI/ML, and Full-Stack internships. Scrolling to the contact form!";
+        action = "SCROLL"; target = "contact";
+      }
+
+      appendMessage('bot', reply);
+      speakBrowserTTS(reply);
+      executeDOMTool(action, target);
+    }
+    const box = document.getElementById('aiChatBox');
+    const answers = {
+      autovalue: "🚗 AutoValue LK trained on 11,750 cleaned Sri Lankan vehicle listings using a tuned Random Forest regression pipeline (R² = 0.739, 84.95% within ±20%) served via FastAPI & React.",
+      shelv: "📚 Shelv is a MERN-stack e-commerce marketplace focused exclusively on buying and selling new and used books, featuring Stripe & COD checkout, courier tracking, and buyer/seller/admin roles.",
+      stack: "⚡ Python, SQL, R, Scikit-learn, XGBoost, PySpark, Databricks, Power BI, FastAPI, React.js, Node.js, MongoDB, and MySQL.",
+      intern: "🎯 Kathuskan is a BSc (Hons) Data Science undergraduate at Sabaragamuwa University of Sri Lanka actively available for Data Science, AI/ML, and Full-Stack Software Engineering internships."
+    };
+    const div = document.createElement('div');
+    div.className = "rounded-2xl bg-sky-500/15 border border-sky-500/30 p-3 text-sky-100";
+    div.textContent = answers[topic];
+    box.appendChild(div);
+    box.scrollTop = box.scrollHeight;
     }
 
     // 14. Smooth Project Category Filter
@@ -1857,4 +2634,5 @@
     }
   </script>
 </body>
+
 </html>
